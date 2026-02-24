@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="idea.css">
+</head>
+<body>
+    <style>
+        body {
+    background-color: #1a1a2e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.progress-container {
+    width: 400px;
+    height: 30px;
+    background-color: #333;
+  
+    overflow: hidden;
+}
+
+.progress-bar {
+    width: 0%;
+    height: 100%;
+    
+    background: green;
+    transition: width 0.05s linear;
+}
+
+.percent {
+    color: white;
+    font-size: 32px;
+    font-family: Arial;
+    margin-top: 15px;
+    font-weight: bold;
+}
+img{
+    width: 60%;
+    height: 40%;
+    top: 0;
+    display: flex;
+    justify-content: center;
+   margin: 40px auto;
+    position: absolute;
+}
+    </style>
+    <img src="https://asiamotors.bh/wp-content/uploads/2021/12/Logo-White-Zeekr.png" >
+    <br><br><br><br>
+    <div class="progress-container">
+        <div class="progress-bar" id="bar"></div>
+    </div>
+    <div class="percent" id="percent">0%</div>
+
+    <script>
+        let width = 0;
+let interval = setInterval(() => {
+    if (width >= 100) {
+        clearInterval(interval);
+        document.getElementById("percent").textContent = "✅ Tayyor!";
+        
+        setTimeout(() => {
+            window.location.href = "zeekr.html";
+        }, 500);
+        
+    } else {
+        width++;
+        document.getElementById("bar").style.width = width + "%";
+        document.getElementById("percent").textContent = width + "%";
+    }
+}, 25);
+    </script>
+</body>
+</html>

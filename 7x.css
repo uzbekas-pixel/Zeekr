@@ -1,0 +1,776 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  text-decoration: none;
+
+}
+.header-video {
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.image-time {
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+}
+.header1 {
+  position: sticky;
+  top: 0;
+  transition: 0.3s ease;
+  height: 100px;
+  z-index: 100;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 60px;
+  background-size: cover;
+  object-position: center;
+
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.title-logo {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding-top: 35px;
+  padding-left: 10px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.main-menu {
+  display: flex;
+  gap: 20px;
+  color: white;
+  font-weight: 500;
+  padding-left: 150px;
+  padding-top: 35px;
+  font-size: 16px;
+}
+.phone-number {
+  display: flex;
+}
+.main-info {
+  padding-left: 150px;
+  padding-top: 20px;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-left: 560px;
+}
+.btn1{
+    width: 200px;
+    height: 45px;
+    border-radius: 4px;
+    color: rgb(0, 0, 0);
+    transition: 0.3s ease;
+    border: 2px solid white;
+    font-size: 16px;
+    background-color: white;
+}
+.btn1:hover{
+    background: transparent;
+   
+    color: white;
+    cursor: pointer;
+}
+.btn2{
+    width: 170px;
+    height: 45px;
+ background: rgb(42, 42, 42);
+    color:rgb(255, 255, 255);
+    transition: 0.3s ease;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid white;
+    font-size: 16px;
+}
+.btn2:hover{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+    cursor: pointer;
+}
+.all-new{
+    color:white;
+    margin-top: 150px;
+    margin-left: 640px;
+}
+.header-coins{
+    color: white;
+   
+}
+.about-buy{
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 800px;
+    text-align: center;
+    margin-left: 300px;
+}
+.text-wrapper{
+    padding-left: 10px;
+}
+.glava-img{
+  width: 100%;
+  height: 115vh;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+  margin-top: 100vh;
+}
+/* Asosiy konteyner */
+.container1 {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    font-family: sans-serif;
+}
+
+/* Header - Matn va Tugmalar uchun */
+.header {
+    display: flex;
+    flex-direction: column; /* Elementlarni ustun qilib taxlaydi (tepadan-pastga) */
+    align-items: center;    /* Hammasini o'rtaga tekislaydi */
+    gap: 25px;
+    margin-bottom: 50px;
+}
+
+.rang-info {
+    text-align: center;
+    display: flex;
+    margin-left: 300px;
+}
+
+.rang-info h1 {
+    font-size: 28px;
+    color: #333;
+    margin: 0;
+}
+
+/* Rang tugmalari guruhi */
+.rang-tugmalari {
+    display: flex;
+    gap: 10px;
+    margin-left: 200px;
+}
+
+.rang-btn {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 2px solid #ddd;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.rang-btn.active {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px #fff, 0 0 0 5px #007bff;
+    transform: scale(1.1);
+}
+
+/* Mashina rasmi qismi */
+.mashina-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.mashina-rasm-wrapper {
+    position: relative;
+    width: 100%;
+    max-width: 900px; /* Rasm o'lchami */
+    min-height: 450px; /* Rasmlar uchun joy band qilib turadi */
+}
+
+.mashina-rasm {
+    width: 100%;
+    height: auto;
+    position: absolute; /* Rasmlarni bir-birining ustiga qo'yadi */
+    top: 0;
+    left: 0;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 1.2s ease;
+    border-radius: 20px;
+}
+
+.mashina-rasm.active {
+    opacity: 1;
+    visibility: visible;
+}
+.btn-text{
+  font-size: 16px;
+  margin-top: 80px;
+  text-align: center;
+}
+.btn-nexts{
+  width: 200px;
+  height: 45px;
+  background: black;
+  color: white;
+  transition: 0.3s ease;
+  border: 1px solid black;
+cursor: pointer;
+  margin-top: 20px;
+  margin-left: 42%;
+
+}
+.btn-nexts:hover{
+  background: transparent;
+  color: black;
+}
+  .orqa-chiroq{
+  display: flex;
+  margin-top: 20px;
+}
+.orqa-chiroq-text{
+  background-color: rgb(246,246,246);
+  width: 680px;
+ justify-content: center;
+}
+.interyer {
+  display: flex;
+  gap: 80px;
+  margin-top: 70px;
+  margin-left: 23%;
+}
+
+.container2 {
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-top: 20px;
+
+  overflow: hidden;
+}
+
+.header2 {
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title-section h1 {
+  font-size: 24px;
+  margin-bottom: 4px;
+  color: #1a1a1a;
+}
+
+.title-section p {
+  font-size: 20px;
+  color: #666;
+}
+
+.color-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.color-btn {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.color-btn:hover {
+  transform: scale(1.1);
+}
+
+.color-btn.active {
+  border-color: #2196f3;
+  box-shadow:
+    0 0 0 2px white,
+    0 0 0 4px #2196f3;
+}
+
+.color-btn.light-green {
+  background: #ffffff ;
+}
+
+.color-btn.dark {
+  background: linear-gradient(to bottom, #000000 50%, #ababab 50%);
+}
+
+.color-btn.blue {
+  background: #000000;
+}
+
+.image-section {
+  width: 100%;
+  height: 600px;
+  overflow: hidden;
+  position: relative;
+}
+
+.car-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 12px;
+}
+
+.car-image.active {
+  opacity: 1;
+  position: relative;
+}
+ .wrapper {
+    width: 100%;
+    max-width: 1100px;
+    margin-left: 15%;
+  }
+
+  /* ── Rasm joyi ── */
+  .img-box {
+    width: 100%;
+    aspect-ratio: 16 / 7;
+    background: #ddd;
+    border-radius: 0;
+    overflow: hidden;
+  }
+
+  .img-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+  }
+
+  .img-box img.show {
+    display: block;
+  }
+
+  /* ── 3 ustun ── */
+  .row {
+    display: flex;
+    border-top: 1px solid #e0dedd;
+    background: #fff;
+  }
+
+  .col {
+    flex: 1;
+    padding: 36px 28px 40px;
+    border-right: 1px solid #e0dedd;
+    cursor: pointer;
+    transition: background 0.4s, color 0.4s;
+  }
+
+  .col:last-child {
+    border-right: none;
+  }
+
+  /* chiziq */
+  .col .line {
+    width: 40px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 18px;
+    transition: background 0.4s;
+  }
+
+  /* title */
+  .col .title {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 10px;
+    line-height: 1.4;
+    transition: color 0.4s;
+  }
+
+  /* tavsif */
+  .col .desc {
+    font-size: 14px;
+    font-weight: 400;
+    color: #777;
+    line-height: 1.6;
+    transition: color 0.4s;
+  }
+
+  /* ── Bosilganda (active) ── */
+  .col.active {
+    background: #1e2a35;
+  }
+  .col.active .line {
+    background: #fff;
+  }
+  .col.active .title {
+    color: #fff;
+  }
+  .col.active .desc {
+    color: rgba(255, 255, 255, 0.6);
+  }
+   /* ── Rasm: to'liq kenglik ── */
+  .rasm-qutisi {
+    width: 80%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: #111;
+  margin-left: 10%;
+  }
+
+  .rasm-qutisi img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .rasm-qutisi img.korsat {
+    opacity: 1;
+  }
+
+  /* ── Text ustunlar ── */
+  .ustunlar {
+    width: 78%;
+    display: flex;
+    padding: 52px 80px 60px;
+    background: #1c1d22;
+    margin-left: 11%;
+  }
+
+  .ustun {
+    flex: 1;
+    padding-right: 50px;
+    cursor: pointer;
+  }
+
+  .ustun:last-child {
+    padding-right: 0;
+  }
+
+  /* chiziq */
+  .ustun .chiziq {
+    width: 80%;
+    height: 2px;
+    background: rgba(255,255,255,0.2);
+    margin-bottom: 22px;
+    transition: background 0.4s;
+  }
+
+  /* title */
+  .ustun .sarlavha {
+    font-size: 18px;
+    font-weight: 600;
+    color: rgba(255,255,255,0.35);
+    line-height: 1.4;
+    margin-bottom: 12px;
+    transition: color 0.4s;
+  }
+
+  /* tavsif */
+  .ustun .tavsif {
+    font-size: 14px;
+    color: rgba(255,255,255,0.22);
+    line-height: 1.65;
+    transition: color 0.4s;
+  }
+
+  /* ── Aktiv ustun ── */
+  .ustun.aktiv .chiziq {
+    background: #ffffff;
+  }
+
+  .ustun.aktiv .sarlavha {
+    color: #ffffff;
+  }
+
+  .ustun.aktiv .tavsif {
+    color: rgba(255,255,255,0.5);
+  }
+  .w-image{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+  }
+   /* ── Rasm joyi ── */
+  .rasm-qutisi1 {
+    width: 80%;
+    height: 550px;
+    position: relative;
+    overflow: hidden;
+    background: #222;
+    margin-left: 10%;
+  }
+
+  .rasm-qutisi1 img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 0.5s;
+  }
+
+  .rasm-qutisi1 img.korsat1 {
+    opacity: 1;
+  }
+
+  /* ── 3 ustun ── */
+  .ustunlar1 {
+    display: flex;
+    padding: 50px 80px 58px;
+
+    width: 80%;
+    margin-left: 10%;
+  }
+
+  .ustun1 {
+    flex: 1;
+    padding-right: 48px;
+    border: none;
+    cursor: pointer;
+  }
+
+  .ustun1:last-child {
+   
+    padding-right: 0;
+  }
+
+  /* chiziq */
+  .ustun1 .chiziq1 {
+    width: 80%;
+    height: 2px;
+    background: #c8c7c5;
+    margin-bottom: 20px;
+    transition: background 0.4s;
+  }
+
+  /* title - noaktiv */
+  .ustun1 .sarlavha1 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #b0aeab;
+    line-height: 1.35;
+    margin-bottom: 14px;
+    transition: color 0.4s;
+  }
+
+  /* tavsif - noaktiv */
+  .ustun1 .tavsif1 {
+    font-size: 14px;
+    color: #b0aeab;
+    line-height: 1.7;
+    transition: color 0.4s;
+  }
+
+  /* ── Aktiv ustun ── */
+  .ustun1.aktiv1 .chiziq1 {
+    background: #1a1a1a;
+  }
+
+  .ustun1.aktiv1 .sarlavha1 {
+    color: #1a1a1a;
+  }
+
+  .ustun1.aktiv1 .tavsif1 {
+    color: #5a5856;
+  }
+  .custom-layout { width: 100%; max-width: 1100px; margin: 0 auto; }
+
+.custom-image-wrapper { 
+    position: relative; 
+    width: 100%; 
+    height: 600px; /* Rasmlaringiz balandligiga qarab moslang */
+    overflow: hidden;
+}
+
+.custom-panel {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    z-index: 1;
+}
+
+.custom-panel img { width: 100%; height: 600px; display: block; }
+
+/* Faol rasm uchun klass */
+.custom-panel.active-panel {
+    opacity: 1;
+    z-index: 2;
+}
+
+/* Pastki qism dizayni */
+.custom-nav { display: flex; gap: 20px; margin-top: 20px; }
+.custom-tab { flex: 1; cursor: pointer; color: #999; }
+.custom-line { height: 2px; background: #ccc; margin-bottom: 10px; }
+
+/* Aktiv matn dizayni */
+.custom-tab.active-tab { color: #000; }
+.custom-tab.active-tab .custom-line { background: #000; height: 3px; }
+
+.future{
+    width: 100%;
+    height: 850px;
+    background: #D4C7BA;
+
+}
+.info-future{
+    display: flex;
+}
+.info-cars{
+padding-left: 40%;
+    font-size: 20px;
+    padding-top: 60px;
+    line-height: 30px;
+    color: #000000;
+}
+.coosec{
+list-style: none;
+color: inherit;
+}
+.logo1{
+     width: 50px;
+  height: 50px;
+
+  background-size: cover;
+
+margin-left: 100px;
+
+}
+    .social-container {
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .social-icon::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, );
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+    }
+
+    .social-icon:hover::before {
+        transform: translateX(100%);
+    }
+
+    .social-icon svg {
+        width: 28px;
+        height: 28px;
+        fill: #8899a6;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    /* Telegram */
+    .social-icon.telegram:hover {
+        background: #0088cc;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+    }
+
+    .social-icon.telegram:hover svg {
+        fill: #ffffff;
+    }
+
+    /* Facebook */
+    .social-icon.facebook:hover {
+        background: #1877f2;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+    }
+
+    .social-icon.facebook:hover svg {
+        fill: #ffffff;
+    }
+
+    /* Instagram */
+    .social-icon.instagram:hover {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(225, 48, 108, 0.4);
+    }
+
+    .social-icon.instagram:hover svg {
+        fill: #ffffff;
+    }
+
+    /* YouTube */
+    .social-icon.youtube:hover {
+        background: #ff0000;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+    }
+
+    .social-icon.youtube:hover svg {
+        fill: #ffffff;
+    }
+
+    /* Bosilganda animatsiya */
+    .social-icon:active {
+        transform: translateY(-2px) scale(1.05);
+    }
+.info-company{
+    padding-left: 120px;
+    padding-top: 60px;
+    font-size: 20px;
+    color: #000000;
+}

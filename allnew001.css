@@ -1,0 +1,690 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  text-decoration: none;
+  color: inherit;
+}
+.header-video {
+    width: 100%;
+    height: 100vh;
+    z-index: -2;
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover {
+  text-decoration: none;
+}
+.image-time {
+  width: 100%;
+  height: 110vh;
+  background-size: cover;
+  object-position: center;
+  position: absolute;
+  z-index: -3;
+  top: 0;
+  left: 0;
+}
+.header1 {
+  position: sticky;
+  top: 0;
+  transition: 0.3s ease;
+  height: 100px;
+  z-index: 100;
+}
+.logo {
+  width: 40px;
+  height: 40px;
+  margin-top: 25px;
+  margin-left: 60px;
+  background-size: cover;
+  object-position: center;
+
+  z-index: 2;
+  top: 0;
+  left: 0;
+}
+.title-logo {
+  color: white;
+  font-weight: 500;
+  letter-spacing: 5px;
+  padding-top: 35px;
+  padding-left: 10px;
+  line-height: 20px;
+  font-size: 16px;
+}
+.main-menu {
+  display: flex;
+  gap: 20px;
+  color: white;
+  font-weight: 500;
+  padding-left: 150px;
+  padding-top: 35px;
+  font-size: 16px;
+}
+.phone-number {
+  display: flex;
+}
+.main-info {
+  padding-left: 150px;
+  padding-top: 20px;
+}
+.btns{
+    display: flex;
+    gap: 10px;
+    margin-top: 40px;
+    margin-left: 520px;
+}
+.btn1{
+    width: 200px;
+    height: 45px;
+    border-radius: 4px;
+    background: white;
+    color: black;
+    transition: 0.3s ease;
+    outline: none;
+    border: 2px solid white;
+    font-size: 16px;
+}
+.btn1:hover{
+    background: transparent;
+    backdrop-filter: blur(5px);
+    color: white;
+}
+.btn2{
+    width: 170px;
+    height: 45px;
+    background-color: rgb(42, 41, 41);
+    color:white;
+    transition: 0.3s ease;
+    border-radius: 4px;
+    outline: none;
+    border: 2px solid white;
+    font-size: 16px;
+}
+.btn2:hover{
+    background: transparent;
+    backdrop-filter: blur(5px);
+}
+.all-new{
+    color:white;
+    margin-top: 150px;
+    margin-left: 520px;
+}
+.header-coins{
+    color: white;
+   
+}
+.about-buy{
+    color: white;
+    margin-top: 10px;
+    font-size: 14px;
+    width: 800px;
+    text-align: center;
+    margin-left: 300px;
+}
+.text-wrapper{
+    padding-left: 10px;
+}
+
+.test-btn1{
+  width: 220px;
+  height: 45px;
+  background: black;
+  color: white;
+border: 2px solid black;
+transition: .3s ease;
+  margin-left: 40%;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.test-btn1:hover{
+  background: transparent;
+  color: black;
+}
+.orqa-chiroq{
+  display: flex;
+  margin-top: 20px;
+}
+.orqa-chiroq-text{
+  background-color: rgb(246,246,246);
+  width: 680px;
+ justify-content: center;
+}
+.interyer{
+  display: flex;
+  gap: 80px;
+  margin-top: 70px;
+  margin-left: 23%;
+}
+
+/* ================================================
+   FIXED: .container — Kuzovning rangi section
+   ================================================ */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+  padding: 0 20px;
+}
+
+.container .header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 0 30px 0;
+}
+
+.rang-info h1 {
+  font-size: 28px;
+  color: #1a1a1a;
+  margin-bottom: 4px;
+}
+
+.rang-info p {
+  font-size: 18px;
+  color: #666;
+}
+
+.rang-tugmalari {
+  display: flex;
+  gap: 14px;
+}
+
+.rang-btn {
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  border: 3px solid transparent;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  outline: none;
+}
+
+.rang-btn:hover {
+  transform: scale(1.15);
+}
+
+.rang-btn.active {
+  border-color: #2196F3;
+  box-shadow: 0 0 0 2px white, 0 0 0 4px #2196F3;
+}
+
+.mashina-wrapper {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 12px;
+}
+
+.mashina-content {
+  width: 100%;
+}
+
+.mashina-rasm-wrapper {
+  width: 100%;
+  position: relative;
+  height: 550px;
+}
+
+.mashina-rasm {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  border-radius: 12px;
+}
+
+.mashina-rasm.active {
+  opacity: 1;
+  z-index: 1;
+}
+/* ================================================ */
+
+        .container2 {
+            max-width: 1000px;
+            margin: 0 auto;
+           margin-top: 40px;
+            
+            overflow: hidden;
+           
+        }
+        
+        .header2 {
+            padding: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+           
+        }
+        
+        .title-section h1 {
+            font-size: 24px;
+            margin-bottom: 4px;
+            color: #1a1a1a;
+        }
+        
+        .title-section p {
+            font-size: 20px;
+            color: #666;
+        }
+        
+        .color-buttons {
+            display: flex;
+            gap: 12px;
+        }
+        
+        .color-btn {
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            border: 3px solid transparent;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+        
+        .color-btn:hover {
+            transform: scale(1.1);
+        }
+        
+        .color-btn.active {
+            border-color: #2196F3;
+            box-shadow: 0 0 0 2px white, 0 0 0 4px #2196F3;
+        }
+        
+        .color-btn.light-green {
+            background: linear-gradient(180deg, #e8f5e9 50%, #2e7d32 50%);
+        }
+        
+        .color-btn.dark {
+            background: #1a1a1a;
+        }
+        
+        .color-btn.blue {
+            background: #37474f;
+        }
+        
+        .color-btn.orange {
+            background: linear-gradient(180deg, #fafafa 50%, #d84315 50%);
+        }
+        
+        .image-section {
+            width: 100%;
+            height: 600px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .car-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            opacity: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: opacity 0.5s ease;
+            border-radius: 12px;
+        }
+        
+        .car-image.active {
+            opacity: 1;
+            position: relative;
+        }
+        .containers3{
+            background-color: #000000;
+        }
+        :root {
+  --bg: #0a0a0c;
+  --text-muted: #6f6f73;
+  --text-active: #ffffff;
+  --line-muted: #2a2a2e;
+}
+
+.feature-section {
+  max-width: 1200px;
+  margin: 80px auto;
+  padding: 0 24px;
+}
+
+.feature-media {
+  margin-bottom: 56px;
+  overflow: hidden;
+  border-radius: 14px;
+}
+
+.feature-image {
+  width: 100%;
+  display: block;
+  transform: scale(1.04);
+  opacity: 0;
+  height: 650px;
+  animation: imageIn 0.6s ease forwards;
+}
+
+@keyframes imageIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.feature-tabs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 48px;
+}
+
+.feature-tab {
+  all: unset;
+  cursor: pointer;
+  position: relative;
+  padding-top: 22px;
+  transition: color 0.3s ease;
+  color: var(--text-muted); /* default: #6f6f73 xiralroq kulrang */
+}
+
+.feature-tab h3 {
+  margin: 0 0 12px;
+  font-size: 20px;
+  font-weight: 600;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.feature-tab p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: inherit;
+  transition: color 0.3s ease;
+}
+
+.feature-tab .line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 2px;
+  width: 100%;
+  background: var(--line-muted);
+  overflow: hidden;
+}
+
+.feature-tab .line::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--text-active);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.45s ease;
+}
+
+.feature-tab.is-active {
+  color: var(--text-active);  margin-top: 3px;
+}
+
+.feature-tab.is-active .line::after {
+  transform: scaleX(1);
+
+}
+.dynamic-img {
+    margin-top: 40px;
+    margin-left: 300px;
+}
+ .carousel {
+      width: 100%;
+      max-width: 1200px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* ─── Track (ichki container har cardni ushlab turadi) ─── */
+    .carousel-track {
+      display: flex;
+      transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    /* ─── Umumiy card stili ─── */
+    .card-item {
+      min-width: 100%;
+      display: flex;
+      background: whitesmoke;
+      padding: 40px;
+      gap: 30px;
+    }
+
+    /* Card matn qismi */
+    .card-text {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 20px;
+      color: #000;
+    }
+
+    .card-text h3 {
+      font-size: 24px;
+      font-weight: 600;
+      margin-bottom: 20px;
+      line-height: 1.3;
+    }
+
+    .card-text p,
+    .card-text ul {
+      font-size: 16px;
+      line-height: 1.6;
+      color: #333;
+    }
+
+    .card-text ul {
+      padding-left: 20px;
+    }
+
+    .card-text ul li {
+      margin-bottom: 8px;
+    }
+
+    /* Card rasm qismi */
+    .card-image {
+      flex-shrink: 0;
+    }
+
+    .card-image img {
+      display: block;
+      border-radius: 8px;
+      object-fit: cover;
+    }
+
+    /* ─── Arrows (pastki o'rtada) ─── */
+    .carousel-arrows {
+      display: flex;
+      justify-content: center;
+      gap: 14px;
+      margin-top: 40px;
+    }
+
+    .carousel-arrow {
+      width: 46px;
+      height: 46px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      background: transparent;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: background 0.3s ease;
+    }
+
+    .carousel-arrow:hover {
+      background: #fff;
+    }
+
+    .carousel-arrow:hover svg path {
+      stroke: #000;
+    }
+
+    .carousel-arrow svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .carousel-arrow svg path {
+      stroke: #fff;
+      stroke-width: 2.5;
+      fill: none;
+      transition: stroke 0.3s ease;
+    }
+
+.test-btn2{
+  width: 220px;
+  height: 45px;
+  background: black;
+  color: white;
+border: 2px solid rgb(255, 255, 255);
+transition: .3s ease;
+  margin-left: 40%;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.future{
+    width: 100%;
+    height: 850px;
+    background: #D4C7BA;
+
+}
+.info-future{
+    display: flex;
+}
+.info-cars{
+padding-left: 40%;
+    font-size: 20px;
+    padding-top: 60px;
+    line-height: 30px;
+    color: #000000;
+}
+.coosec{
+list-style: none;
+color: inherit;
+}
+.logo1{
+     width: 50px;
+  height: 50px;
+
+  background-size: cover;
+
+margin-left: 100px;
+
+}
+    .social-container {
+        display: flex;
+        gap: 20px;
+        padding-top: 20px;
+    }
+
+    .social-icon {
+        width: 45px;
+        height: 45px;
+        
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.4s ease;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .social-icon::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(45deg, transparent, );
+        transform: translateX(-100%);
+        transition: transform 0.4s ease;
+    }
+
+    .social-icon:hover::before {
+        transform: translateX(100%);
+    }
+
+    .social-icon svg {
+        width: 28px;
+        height: 28px;
+        fill: #8899a6;
+        transition: all 0.3s ease;
+        z-index: 1;
+    }
+
+    /* Telegram */
+    .social-icon.telegram:hover {
+        background: #0088cc;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+    }
+
+    .social-icon.telegram:hover svg {
+        fill: #ffffff;
+    }
+
+    /* Facebook */
+    .social-icon.facebook:hover {
+        background: #1877f2;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+    }
+
+    .social-icon.facebook:hover svg {
+        fill: #ffffff;
+    }
+
+    /* Instagram */
+    .social-icon.instagram:hover {
+        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(225, 48, 108, 0.4);
+    }
+
+    .social-icon.instagram:hover svg {
+        fill: #ffffff;
+    }
+
+    /* YouTube */
+    .social-icon.youtube:hover {
+        background: #ff0000;
+        transform: translateY(-5px) scale(1.1);
+        box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+    }
+
+    .social-icon.youtube:hover svg {
+        fill: #ffffff;
+    }
+
+    /* Bosilganda animatsiya */
+    .social-icon:active {
+        transform: translateY(-2px) scale(1.05);
+    }
+.info-company{
+    padding-left: 120px;
+    padding-top: 60px;
+    font-size: 20px;
+    color: #000000;
+}
