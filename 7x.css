@@ -774,3 +774,228 @@ margin-left: 100px;
     font-size: 20px;
     color: #000000;
 }
+/* ===== TELEFON (max 768px) ===== */
+@media (max-width: 768px) {
+  .header1 {
+    height: auto;
+    padding-bottom: 10px;
+  }
+  .logo {
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 30px;
+    height: 30px;
+  }
+  .title-logo {
+    font-size: 12px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+  }
+  .main-menu {
+    display: none;
+  }
+  .btns {
+    margin-left: 10px;
+    gap: 8px;
+    margin-top: 15px;
+  }
+  .btn1, .btn2 {
+    width: 140px;
+    height: 40px;
+    font-size: 13px;
+  }
+  .all-new {
+    margin-left: 15px;
+    margin-top: 60px;
+  }
+  .about-buy {
+    width: 90%;
+    margin-left: 5%;
+    font-size: 13px;
+  }
+  .container1 {
+    padding: 0 10px;
+    margin: 20px auto;
+  }
+  .rang-info {
+    margin-left: 0;
+    flex-direction: column;
+  }
+  .rang-tugmalari {
+    margin-left: 0;
+    flex-wrap: wrap;
+  }
+  .mashina-rasm-wrapper {
+    min-height: 200px;
+  }
+  .btn-text {
+    margin-top: 30px;
+    font-size: 14px;
+  }
+  .btn-nexts {
+    margin-left: 10%;
+    width: 160px;
+  }
+  .orqa-chiroq {
+    flex-direction: column;
+  }
+  .orqa-chiroq-text {
+    width: 100%;
+  }
+  .interyer {
+    flex-direction: column;
+    margin-left: 10px;
+    gap: 20px;
+  }
+  .container2 {
+    padding: 0 10px;
+  }
+  .header2 {
+    flex-direction: column;
+    padding: 20px;
+    gap: 15px;
+  }
+  .image-section {
+    height: 250px;
+  }
+  .containers3 {
+    padding: 0 10px;
+  }
+  .feature-section {
+    padding: 0 10px;
+    margin: 40px auto;
+  }
+  .feature-tabs {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .feature-image {
+    height: 250px;
+  }
+  .future {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .info-future {
+    flex-direction: column;
+  }
+  .info-cars {
+    padding-left: 15px;
+    font-size: 16px;
+    padding-top: 30px;
+  }
+  .info-company {
+    padding-left: 15px;
+    padding-top: 20px;
+    font-size: 16px;
+  }
+  .logo1 {
+    margin-left: 15px;
+  }
+}
+
+/* ===== PLANSHET (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main-menu {
+    padding-left: 40px;
+    gap: 12px;
+    font-size: 13px;
+  }
+  .logo {
+    margin-left: 20px;
+  }
+  .btns {
+    margin-left: 200px;
+  }
+  .all-new {
+    margin-left: 200px;
+  }
+  .container1 {
+    padding: 0 20px;
+  }
+  .rang-info {
+    margin-left: 100px;
+  }
+  .rang-tugmalari {
+    margin-left: 50px;
+  }
+  .btn-nexts {
+    margin-left: 30%;
+  }
+  .interyer {
+    margin-left: 5%;
+    gap: 40px;
+  }
+  .image-section {
+    height: 400px;
+  }
+  .feature-image {
+    height: 400px;
+  }
+  .future {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .info-future {
+    flex-direction: column;
+  }
+  .info-cars {
+    padding-left: 30px;
+  }
+  .info-company {
+    padding-left: 50px;
+  }
+}
+
+/* ===== KOMPYUTER (1080px) ===== */
+@media (max-width: 1080px) and (min-width: 1025px) {
+  .main-menu {
+    padding-left: 60px;
+    gap: 15px;
+    font-size: 14px;
+  }
+  .logo {
+    margin-left: 30px;
+  }
+  .btns {
+    margin-left: 350px;
+  }
+  .all-new {
+    margin-left: 350px;
+  }
+  .container1 {
+    padding: 0 30px;
+  }
+  .rang-info {
+    margin-left: 200px;
+  }
+  .rang-tugmalari {
+    margin-left: 100px;
+  }
+  .btn-nexts {
+    margin-left: 38%;
+  }
+  .interyer {
+    margin-left: 15%;
+    gap: 60px;
+  }
+  .image-section {
+    height: 500px;
+  }
+  .feature-image {
+    height: 500px;
+  }
+  .future {
+    height: auto;
+    padding-bottom: 40px;
+  }
+  .info-future {
+    flex-direction: column;
+  }
+  .info-cars {
+    padding-left: 20%;
+  }
+  .info-company {
+    padding-left: 60px;
+  }
+}
