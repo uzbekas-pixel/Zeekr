@@ -255,6 +255,7 @@ a:hover {
 .news {
   display: flex;
   gap: 40px;
+  left: 200px;
 }
 .news > div p:hover {
   text-decoration: underline;
