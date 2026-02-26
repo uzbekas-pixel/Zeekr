@@ -58,13 +58,9 @@ a:hover {
   gap: 20px;
   color: white;
   font-weight: 500;
-  padding-left: 60px;
-  flex: 1;
+  padding-left: 150px;
+  padding-top: 35px;
   font-size: 16px;
-}
-.main-menu a {
-  color: white;
- 
 }
 .phone-number {
   display: flex;
@@ -310,10 +306,10 @@ a:hover {
 }
 .info-future{
     display: flex;
-   left: 500px;
+
 }
 .info-cars{
-
+padding-left: 40%;
     font-size: 20px;
     padding-top: 60px;
     line-height: 30px;
