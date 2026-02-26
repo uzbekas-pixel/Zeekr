@@ -64,6 +64,7 @@ a:hover {
 }
 .main-menu a {
   color: white;
+  font-size: 20px;
 }
 .phone-number {
   display: flex;
@@ -312,7 +313,7 @@ a:hover {
    
 }
 .info-cars{
-margin-left: 460px;
+
     font-size: 20px;
     padding-top: 60px;
     line-height: 30px;
