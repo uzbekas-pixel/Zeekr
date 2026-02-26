@@ -60,11 +60,11 @@ a:hover {
   font-weight: 500;
   padding-left: 60px;
   flex: 1;
-  font-size: 20px;
+  font-size: 16px;
 }
 .main-menu a {
   color: white;
-  font-size: 20px;
+ 
 }
 .phone-number {
   display: flex;
