@@ -5,7 +5,7 @@ html { zoom: 1; }
   box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
-body{
+body {
   text-decoration: none;
   color: inherit;
 }
@@ -13,14 +13,15 @@ a {
   text-decoration: none;
   color: inherit;
 }
-
 a:hover {
   text-decoration: none;
 }
+
+/* ========== HEADER ========== */
 .image-time {
   width: 100%;
-  height: 110vh;
-  background-size: cover;
+  height: 100vh;
+  object-fit: cover;
   object-position: center;
   position: absolute;
   z-index: -3;
@@ -33,24 +34,19 @@ a:hover {
   transition: 0.3s ease;
   height: 100px;
   z-index: 100;
+  display: flex;
+  align-items: center;
+  padding: 0 70px;
 }
 .logo {
   width: 50px;
   height: 50px;
-  margin-top: 20px;
-  margin-left: 70px;
-  background-size: cover;
-  object-position: center;
-
-  z-index: 2;
-  top: 0;
-  left: 0;
+  object-fit: cover;
 }
 .title-logo {
   color: white;
   font-weight: 500;
   letter-spacing: 5px;
-  padding-top: 35px;
   padding-left: 10px;
   line-height: 20px;
 }
@@ -59,27 +55,40 @@ a:hover {
   gap: 20px;
   color: white;
   font-weight: 500;
-  padding-left: 200px;
-  padding-top: 35px;
+  padding-left: 60px;
+  flex: 1;
 }
 .phone-number {
   display: flex;
+  align-items: center;
+  gap: 8px;
 }
 .main-info {
-  padding-left: 210px;
-  padding-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* ========== BUTTONS ========== */
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 30px 0 0 0;
+  justify-content: center;
 }
 .btn1 {
   width: 300px;
   height: 60px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
   border: 1px solid whitesmoke;
   background: none;
   transition: 0.3s ease;
-  margin-top: 20px;
-  margin-left: 35%;
+  cursor: pointer;
 }
 .btn1:hover {
   background: transparent;
@@ -89,114 +98,94 @@ a:hover {
   width: 200px;
   height: 60px;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
   border: 1px solid whitesmoke;
   background: white;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .btn2:hover {
   background: transparent;
+  color: white;
   backdrop-filter: blur(5px);
-}
-.zeekrx {
-  width: 100%;
-  height: 110vh;
-  background-size: cover;
-  object-position: center;
-  z-index: -3;
-  top: 0;
-  left: 0;
-  margin-top: 1000px;
-  position: absolute;
 }
 .btn3 {
   width: 300px;
   height: 60px;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
   border: 1px solid whitesmoke;
   background: none;
   transition: 0.3s ease;
-  margin-top: 20px;
-  margin-left: 35%;
+  cursor: pointer;
 }
-
 .btn4 {
   width: 200px;
   height: 60px;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   border-radius: 4px;
   border: 1px solid whitesmoke;
   background: white;
   transition: 0.3s ease;
+  cursor: pointer;
 }
 .btn4:hover {
   background: none;
   color: white;
 }
-.zeekr001 {
+
+/* ========== CAR SECTIONS ========== */
+.car-section {
+  position: relative;
   width: 100%;
-  height: 110vh;
-  background-size: cover;
-  object-position: center;
-  z-index: -3;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 80px;
+}
+.car-section img {
+  position: absolute;
   top: 0;
   left: 0;
-  margin-top: 2000px;
-  position: absolute;
-}
-.zeekrX {
   width: 100%;
-  height: 110vh;
-  background-size: cover;
-  object-position: center;
-  z-index: -3;
-  top: 0;
-  left: 0;
-  margin-top: 3000px;
-  position: absolute;
-}
-.zeekr007 {
-  width: 100%;
-  height: 110vh;
-  background-size: cover;
-  object-position: center;
-  z-index: -3;
-  top: 0;
-  left: 0;
-  margin-top: 4000px;
-  position: absolute;
-}
-.zeekr009 {
-  width: 100%;
-  height: 110vh;
-  background-size: cover;
-  object-position: center;
+  height: 100%;
+  object-fit: cover;
   z-index: -1;
-  top: 0;
-  left: 0;
-  margin-top: 5000px;
-  position: absolute;
 }
+.car-section h1 {
+  text-align: center;
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+/* Eski absolute image classlar — hali ishlashi uchun saqlab qoldik */
+.zeekrx,
+.zeekr001,
+.zeekrX,
+.zeekr007,
+.zeekr009,
 .zeekr0001 {
   width: 100%;
-  height: 110vh;
-  background-size: cover;
+  height: 100vh;
+  object-fit: cover;
   object-position: center;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  margin-top: 6000px;
   position: absolute;
+  z-index: -3;
+  left: 0;
 }
+
+/* ========== DILER ========== */
 .searc-diler {
   font-size: 50px;
   font-weight: 500;
-  margin-top: 1000px;
-  margin-left: 400px;
+  margin-top: 60px;
+  text-align: center;
 }
 .diler-btn {
   width: 400px;
@@ -205,38 +194,40 @@ a:hover {
   background: black;
   color: white;
   transition: 0.3s ease;
-  font-size: 20px;
-  margin-top: 50px;
-  margin-left: 55%;
+  font-size: 18px;
+  margin: 30px auto;
+  display: block;
   cursor: pointer;
+  border: none;
 }
 .diler-btn:hover {
   background: white;
   color: black;
+  border: 1px solid black;
+}
+.diler-main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  padding: 30px;
 }
 .diler-img {
   width: 500px;
   height: 400px;
-  background-size: cover;
-  object-position: center;
-  margin-top: 30px;
-  margin-left: 400px;
-}
-.diler-main {
-  display: flex;
-}
-.diler-map {
-  border: none;
-  margin-top: 30px;
-  margin-left: 70px;
+  object-fit: cover;
 }
 .diler-text {
   width: 490px;
-  margin-left: 400px;
   margin-top: 30px;
 }
 .diler-num-time {
   display: flex;
+  margin-top: 30px;
+  gap: 30px;
+}
+.diler-map {
+  border: none;
   margin-top: 30px;
 }
 .location-btn {
@@ -244,18 +235,25 @@ a:hover {
   height: 50px;
   background: black;
   color: white;
-  font-size: 20px;
+  font-size: 18px;
   margin-top: 30px;
   transition: 0.3s ease;
   cursor: pointer;
+  border: none;
 }
 .location-btn:hover {
   background: white;
   color: black;
 }
+
+/* ========== NEWS ========== */
 .news {
   display: flex;
   gap: 40px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 70px;
+  margin-top: 40px;
 }
 .news > div p:hover {
   text-decoration: underline;
@@ -263,7 +261,6 @@ a:hover {
 }
 .new1 {
   width: 350px;
-
   overflow: hidden;
   margin-top: 40px;
   cursor: pointer;
@@ -271,136 +268,104 @@ a:hover {
 .new-img {
   width: 350px;
   height: 350px;
+  overflow: hidden;
 }
 .new1 img {
   width: 350px;
   height: 350px;
   transition: 0.3s ease;
   object-fit: cover;
-  cursor: pointer;
 }
 .new1 img:hover {
   scale: 1.1;
 }
 .new1 p {
-  font-size: 22px;
+  font-size: 20px;
   margin-top: 20px;
   transition: 0.2s ease;
   font-weight: 550;
   line-height: 30px;
 }
-.future{
-    width: 100%;
-    height: 1000px;
-    background: #D4C7BA;
 
+/* ========== FOOTER ========== */
+.future {
+  width: 100%;
+  min-height: 700px;
+  background: #D4C7BA;
+  padding: 60px 70px 40px;
 }
-.info-future{
-    display: flex;
+.info-future {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
 }
-.info-cars{
-   padding-left: 40%;
-    font-size: 27px;
-    padding-top: 90px;
-    line-height: 40px;
+.logo1 {
+  width: 40px;
+  height: 40px;
 }
-.coosec{
-list-style: none;
-color: inherit;
+.header4 {
+  display: flex;
+  align-items: center;
 }
-
-    .social-container {
-        display: flex;
-        gap: 20px;
-        padding-top: 20px;
-    }
-
-    .social-icon {
-        width: 45px;
-        height: 45px;
-        
-        border-radius: 50%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        cursor: pointer;
-        transition: all 0.4s ease;
-        position: relative;
-        overflow: hidden;
-    }
-
-    .social-icon::before {
-        content: '';
-        position: absolute;
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(45deg, transparent, );
-        transform: translateX(-100%);
-        transition: transform 0.4s ease;
-    }
-
-    .social-icon:hover::before {
-        transform: translateX(100%);
-    }
-
-    .social-icon svg {
-        width: 28px;
-        height: 28px;
-        fill: #8899a6;
-        transition: all 0.3s ease;
-        z-index: 1;
-    }
-
-    /* Telegram */
-    .social-icon.telegram:hover {
-        background: #0088cc;
-        transform: translateY(-5px) scale(1.1);
-        box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
-    }
-
-    .social-icon.telegram:hover svg {
-        fill: #ffffff;
-    }
-
-    /* Facebook */
-    .social-icon.facebook:hover {
-        background: #1877f2;
-        transform: translateY(-5px) scale(1.1);
-        box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
-    }
-
-    .social-icon.facebook:hover svg {
-        fill: #ffffff;
-    }
-
-    /* Instagram */
-    .social-icon.instagram:hover {
-        background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
-        transform: translateY(-5px) scale(1.1);
-        box-shadow: 0 10px 25px rgba(225, 48, 108, 0.4);
-    }
-
-    .social-icon.instagram:hover svg {
-        fill: #ffffff;
-    }
-
-    /* YouTube */
-    .social-icon.youtube:hover {
-        background: #ff0000;
-        transform: translateY(-5px) scale(1.1);
-        box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
-    }
-
-    .social-icon.youtube:hover svg {
-        fill: #ffffff;
-    }
-
-    /* Bosilganda animatsiya */
-    .social-icon:active {
-        transform: translateY(-2px) scale(1.05);
-    }
-.info-company{
-    padding-left: 300px;
-    padding-top: 90px;
-    font-size: 25px;
+.info-cars {
+  font-size: 22px;
+  line-height: 40px;
+}
+.info-company {
+  font-size: 22px;
+}
+.coosec {
+  list-style: none;
+  color: inherit;
+}
+.social-container {
+  display: flex;
+  gap: 20px;
+  padding-top: 20px;
+}
+.social-icon {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  position: relative;
+  overflow: hidden;
+}
+.social-icon svg {
+  width: 28px;
+  height: 28px;
+  fill: #8899a6;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+.social-icon.telegram:hover {
+  background: #0088cc;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(0, 136, 204, 0.4);
+}
+.social-icon.telegram:hover svg { fill: #ffffff; }
+.social-icon.facebook:hover {
+  background: #1877f2;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(24, 119, 242, 0.4);
+}
+.social-icon.facebook:hover svg { fill: #ffffff; }
+.social-icon.instagram:hover {
+  background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(225, 48, 108, 0.4);
+}
+.social-icon.instagram:hover svg { fill: #ffffff; }
+.social-icon.youtube:hover {
+  background: #ff0000;
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 10px 25px rgba(255, 0, 0, 0.4);
+}
+.social-icon.youtube:hover svg { fill: #ffffff; }
+.social-icon:active {
+  transform: translateY(-2px) scale(1.05);
 }
