@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="zeekr.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="icon" type="icon" href="img/logo.png">
-  </head>
+  <style>#car-cursor{position:fixed;pointer-events:none;z-index:99999;left:0;top:0;font-size:28px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px rgba(255,200,0,0.8));}body{cursor:none;}</style></head>
   <body>
 
     <!-- HEADER -->
@@ -256,5 +256,5 @@
         }
       });
     </script>
-  </body>
+  <div id="car-cursor">??</div><script>const car=document.getElementById("car-cursor");let px=0;document.addEventListener("mousemove",e=>{car.style.left=e.clientX+"px";car.style.top=e.clientY+"px";if(e.clientX-px<-2)car.style.transform="translate(-50%,-50%) scaleX(-1)";else if(e.clientX-px>2)car.style.transform="translate(-50%,-50%) scaleX(1)";px=e.clientX;});</script></body>
 </html>
