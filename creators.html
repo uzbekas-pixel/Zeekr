@@ -40,7 +40,7 @@
 
       <div class="language">
         <span>🌐</span>
-        <span>Русский</span>
+        <span style="cursor:pointer" onclick="window.open('https://translate.google.com/translate?sl=uz&tl=ru&u='+encodeURIComponent(window.location.href),'_self')">Русский</span>
       </div>
     </header>
     <div class="container">
@@ -338,3 +338,6 @@
     </script>
   <div id="car-cursor">&#x1F697;</div><script>const car=document.getElementById("car-cursor");let px=0;document.addEventListener("mousemove",e=>{car.style.left=e.clientX+"px";car.style.top=e.clientY+"px";if(e.clientX-px<-2)car.style.transform="translate(-50%,-50%) scaleX(-1)";else if(e.clientX-px>2)car.style.transform="translate(-50%,-50%) scaleX(1)";px=e.clientX;});</script><div id="progress-bar"></div><script>window.addEventListener("scroll",()=>{const s=document.documentElement;const p=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;document.getElementById("progress-bar").style.width=p+"%";});</script><button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button><script>window.addEventListener("scroll",()=>{const btn=document.getElementById("back-top");if(window.scrollY>300)btn.classList.add("show");else btn.classList.remove("show");});</script><div id="page-transition"></div><script>document.querySelectorAll("a[onclick]").forEach(a=>{a.addEventListener("click",function(e){const fn=this.getAttribute("onclick");if(fn&&fn.includes("location.href")){e.preventDefault();const match=fn.match(/location\.href=.([^.']+\.html)/);if(match){const overlay=document.getElementById("page-transition");overlay.classList.add("fade-in");setTimeout(()=>{eval(fn);},400);}}});});</script><div id="cookie-overlay"></div><div id="cookie-box"><div><h3>?? Cookie sozlamalari</h3><p>Saytimiz tajribangizni yaxshilash uchun cookie fayllaridan foydalanadi. Davom etish orqali siz cookie siyosatimizga rozilik bildirasiz.</p></div><div class="cookie-btns"><button id="cookie-decline" onclick="hideCookie()">Rad etish</button><button id="cookie-accept" onclick="hideCookie()">Qabul qilish</button></div></div><script>function hideCookie(){document.getElementById('cookie-box').classList.add('hide');document.getElementById('cookie-overlay').classList.add('hide');localStorage.setItem('cookie','1');}if(localStorage.getItem('cookie'))hideCookie();</script></body>
 </html>
+
+
+
