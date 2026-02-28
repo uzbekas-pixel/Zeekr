@@ -13,8 +13,8 @@
       referrerpolicy="no-referrer"
     />
     <link rel="icon" type="icon" href="img/logo.png" />
-  <style>#car-cursor{position:fixed;pointer-events:none;z-index:99999;left:0;top:0;font-size:28px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px rgba(255,200,0,0.8));}*{cursor:none !important;}</style></head>
-  <body>
+  <style>#car-cursor{position:fixed;pointer-events:none;z-index:99999;left:0;top:0;font-size:28px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px rgba(255,200,0,0.8));}*{cursor:none !important;}</style><style>#progress-bar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#1a1a1a,#555);z-index:99999;transition:width 0.1s;}</style><style>#loader{position:fixed;inset:0;background:#fff;z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;transition:opacity 0.5s,visibility 0.5s;}#loader.hide{opacity:0;visibility:hidden;}#loader-logo{font-size:32px;font-weight:700;letter-spacing:4px;color:#111;}#loader-bar{width:200px;height:2px;background:#eee;border-radius:2px;overflow:hidden;}#loader-fill{height:100%;width:0%;background:#111;animation:load 1.2s ease forwards;}@keyframes load{to{width:100%;}}</style><style>html{scroll-behavior:smooth;}</style><style>#back-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:#111;color:#fff;border:none;border-radius:50%;font-size:20px;cursor:pointer;z-index:9999;opacity:0;visibility:hidden;transition:opacity 0.3s,visibility 0.3s,transform 0.3s;display:flex;align-items:center;justify-content:center;}#back-top.show{opacity:1;visibility:visible;}#back-top:hover{transform:translateY(-4px);background:#333;}</style></head>
+  <body><div id="loader"><div id="loader-logo">ZEEKR</div><div id="loader-bar"><div id="loader-fill"></div></div></div><script>window.addEventListener("load",()=>{setTimeout(()=>{document.getElementById("loader").classList.add("hide");},1300);});</script>
     <header>
       <div class="logo">
         <span><img src="img/logo.png" width="40px" height="30px" /></span>
@@ -336,5 +336,5 @@
         event.target.classList.add("active");
       }
     </script>
-  <div id="car-cursor">&#x1F697;</div><script>const car=document.getElementById("car-cursor");let px=0;document.addEventListener("mousemove",e=>{car.style.left=e.clientX+"px";car.style.top=e.clientY+"px";if(e.clientX-px<-2)car.style.transform="translate(-50%,-50%) scaleX(-1)";else if(e.clientX-px>2)car.style.transform="translate(-50%,-50%) scaleX(1)";px=e.clientX;});</script></body>
+  <div id="car-cursor">&#x1F697;</div><script>const car=document.getElementById("car-cursor");let px=0;document.addEventListener("mousemove",e=>{car.style.left=e.clientX+"px";car.style.top=e.clientY+"px";if(e.clientX-px<-2)car.style.transform="translate(-50%,-50%) scaleX(-1)";else if(e.clientX-px>2)car.style.transform="translate(-50%,-50%) scaleX(1)";px=e.clientX;});</script><div id="progress-bar"></div><script>window.addEventListener("scroll",()=>{const s=document.documentElement;const p=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;document.getElementById("progress-bar").style.width=p+"%";});</script><button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button><script>window.addEventListener("scroll",()=>{const btn=document.getElementById("back-top");if(window.scrollY>300)btn.classList.add("show");else btn.classList.remove("show");});</script></body>
 </html>
