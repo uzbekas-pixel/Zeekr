@@ -1,4 +1,4 @@
-
+$js = @'
 window.onscroll = () => {
   const bosh = document.querySelector(".header1");
   if (scrollY > 1) {
@@ -133,3 +133,5 @@ class TechShowcase {
 document.addEventListener("DOMContentLoaded", () => {
   new TechShowcase();
 });
+'@
+Set-Content -Path "001.js" -Value $js -Encoding UTF8
