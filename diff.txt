@@ -1,0 +1,943 @@
+﻿diff --git a/001.css b/001.css
+index ad9cc86..157cb80 100644
+--- a/001.css
++++ b/001.css
+@@ -1,4 +1,4 @@
+-html { zoom: 1; }
++я╗┐html { zoom: 1; }
+ * {
+   padding: 0;
+   margin: 0;
+@@ -516,13 +516,13 @@ cursor: pointer;
+   border-radius: 14px;
+ }
+ 
+-/* тЖР MUHIM: Animation o'chirildi, faqat transition qoldirildi */
++/* ╨▓тАа╤Т MUHIM: Animation o'chirildi, faqat transition qoldirildi */
+ #mainFeatureImg {
+   width: 100%;
+   display: block;
+   height: 650px;
+   object-fit: cover;
+-  transition: opacity 0.3s ease; /* тЖР Faqat shu kerak! */
++  transition: opacity 0.3s ease; /* ╨▓тАа╤Т Faqat shu kerak! */
+   opacity: 1;
+ }
+ 
+@@ -724,4 +724,4 @@ margin-left: 100px;
+ 
+ 
+ .main-menu a { font-size: 16px; }
+-::-webkit-scrollbar{display:none;}body{scrollbar-width:none;-ms-overflow-style:none;}
+\ No newline at end of file
++::-webkit-scrollbar{display:none;}body{scrollbar-width:none;-ms-overflow-style:none;}
+diff --git a/001.html b/001.html
+index 49f68f5..0db52a4 100644
+--- a/001.html
++++ b/001.html
+@@ -1,9 +1,9 @@
+-<!doctype html>
++я╗┐<!doctype html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <title>Zeekr O'zbekiston</title>
++    <title>Document</title>
+     <link rel="stylesheet" href="001.css" />
+     <link
+       rel="stylesheet"
+@@ -12,30 +12,30 @@
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+-    <link rel="icon" type="image/png" href="img/logo.png">
+-  <style>#car-cursor{position:fixed;pointer-events:none;z-index:9999;left:0;top:0;font-size:28px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px rgba(255,200,0,0.8));}body{cursor:none;}</style><style>#progress-bar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#1a1a1a,#555);z-index:99999;transition:width 0.1s;}</style><style>#loader{position:fixed;inset:0;background:#fff;z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;transition:opacity 0.5s,visibility 0.5s;}#loader.hide{opacity:0;visibility:hidden;}#loader-logo{font-size:32px;font-weight:700;letter-spacing:4px;color:#111;}#loader-bar{width:200px;height:2px;background:#eee;border-radius:2px;overflow:hidden;}#loader-fill{height:100%;width:0%;background:#111;animation:load 1.2s ease forwards;}@keyframes load{to{width:100%;}}</style><style>html{scroll-behavior:smooth;}</style><style>#back-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:#111;color:#fff;border:none;border-radius:50%;font-size:20px;cursor:pointer;z-index:9999;opacity:0;visibility:hidden;transition:opacity 0.3s,visibility 0.3s,transform 0.3s;display:flex;align-items:center;justify-content:center;}#back-top.show{opacity:1;visibility:visible;}#back-top:hover{transform:translateY(-4px);background:#333;}</style><style></style><style>#cookie-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999997;backdrop-filter:blur(4px);transition:opacity 0.4s;}#cookie-overlay.hide{opacity:0;pointer-events:none;}#cookie-box{position:fixed;bottom:0;left:0;right:0;background:#fff;z-index:999998;padding:32px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 -8px 40px rgba(0,0,0,0.15);transition:transform 0.4s;}#cookie-box.hide{transform:translateY(100%);}#cookie-box h3{font-size:18px;font-weight:700;margin-bottom:6px;color:#111;}#cookie-box p{font-size:14px;color:#555;max-width:600px;line-height:1.5;}#cookie-box .cookie-btns{display:flex;gap:12px;flex-shrink:0;}#cookie-accept{background:#111;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:background 0.2s;}#cookie-accept:hover{background:#333;}#cookie-decline{background:transparent;color:#111;border:2px solid #ddd;padding:12px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;}#cookie-decline:hover{border-color:#999;}</style><style>.goog-te-banner-frame{display:none!important;}body{top:0!important;}.goog-te-ftab-float{display:none!important;}#goog-gt-tt{display:none!important;}.goog-tooltip{display:none!important;}</style><script>if(localStorage.getItem('lang')=='ru'&&!window.location.href.includes('translate.yandex')){window.location.href='https://translate.yandex.com/translate?lang=uz-ru&url='+encodeURIComponent(window.location.href);}</script></head>
+-  <body><div id="loader"><div id="loader-logo">ZEEKR</div><div id="loader-bar"><div id="loader-fill"></div></div></div><script>window.addEventListener("load",()=>{setTimeout(()=>{document.getElementById("loader").classList.add("hide");},1300);});</script>
++    <link rel="icon" type="icon" href="img/logo.png" />
++  </head>
++  <body>
+     <video autoplay muted loop class="header-video">
+       <source src="img/001.mp4" type="video/mp4" />
+     </video>
+     <div style="display: flex" class="header1">
+       <img src="img/Zeekr.webp" class="logo" />
+-      <a onclick="location.href='zeekr.html'" style="text-decoration: none; color: inherit"
++      <a href="zeekr.html" style="text-decoration: none; color: inherit"
+         ><p class="title-logo">ZEEKR</p></a
+       >
+       <div class="main-menu">
+-        <a onclick="location.href='001.html'">001</a>
+-        <a onclick="location.href='allnew001.html'">All new 001</a>
+-        <a onclick="location.href='007.html'">007</a>
++        <a href="001.html">001</a>
++        <a href="allnew001.html">All new 001</a>
++        <a href="007.html">007</a>
+         <a href="007.html#mapSection">007 GT</a>
+-        <a onclick="location.href='x.html'">X</a>
+-        <a onclick="location.href='7x.html'">7X</a>
+-        <a onclick="location.href='009.html'">009</a>
+-        <a onclick="location.href='9x.html'">9X</a>
+-        <a onclick="location.href='aboutus.html'">Biz haqimizda</a>
++        <a href="x.html">X</a>
++        <a href="7x.html">7X</a>
++        <a href="009.html">009</a>
++        <a href="9x.html">9X</a>
++        <a href="aboutus.html">Biz haqimizda</a>
+         <a href="zeekr.html#mapSection">Dilerni izlash</a>
+-        <a onclick="location.href='comedealer.html'">Dilerga aylaning</a>
+-        <a onclick="location.href='creators.html'">Egalari</a>
++        <a href="comedealer.html">Dilerga aylaning</a>
++        <a href="creators.html">Egalari</a>
+       </div>
+       <div style="float: left" class="main-info">
+         <div class="phone-number">
+@@ -52,7 +52,7 @@
+         <div style="display: flex; padding-top: 10px; font-size: 16px">
+           <i class="fa-solid fa-globe" style="color: #ffffff"></i>
+ 
+-          <p style="color: white; cursor: pointer" onclick="localStorage.setItem('lang','ru');window.open('https://translate.yandex.com/translate?lang=uz-ru&url='+encodeURIComponent(window.location.href),'_self')">╨а╤Г╤Б╤Б╨║╨╕╨╣</p>
++          <p style="color: white; cursor: pointer">тХи╨░тХд╨УтХд╨СтХд╨СтХитХСтХитХХтХитХг</p>
+         </div>
+       </div>
+     </div>
+@@ -67,15 +67,15 @@
+           padding-left: 7px;
+         "
+       >
+-        soтАШmdan boshlab*
++        so╤В╨Р╨иmdan boshlab*
+       </p>
+     </div>
+     <p class="about-buy">
+       *Oldindan buyurtma berishda. Taklif 30.09.2025 gacha amal qiladi. 2025
+-      yilda ishlab chiqariladigan avtomobillarning chakana narxi koтАШrsatilgan.
++      yilda ishlab chiqariladigan avtomobillarning chakana narxi ko╤В╨Р╨иrsatilgan.
+     </p>
+     <div class="btns">
+-      <a onclick="location.href='testdrive001.html'"
++      <a href="testdrive001.html"
+         ><button class="btn1" style="background: transparent">
+           Test-drayvga yozilish
+         </button></a
+@@ -233,7 +233,7 @@
+       Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi haqida
+       batafsil ma'lumot olish uchun so'rov qoldiring.
+     </p>
+-    <a onclick="location.href='testdrive001.html'"
++    <a href="testdrive001.html"
+       ><button class="btn3">Test-drayvga yozilish</button></a
+     >
+     <div
+@@ -256,8 +256,8 @@
+           color: #000000;
+         "
+       >
+-        Avtomobil kuzovi oтАШzining benuqson konturlari tufayli yorqin ifodalangan
+-        va atletik koтАШrinishga ega.
++        Avtomobil kuzovi o╤В╨Р╨иzining benuqson konturlari tufayli yorqin ifodalangan
++        va atletik ko╤В╨Р╨иrinishga ega.
+       </p>
+     </div>
+     <div
+@@ -292,7 +292,7 @@
+         >
+           Sport uslubidagi avtomobil. Kuzovning shakli bejirim kupe tuzilishiga
+           ega. Muvozanatlashtirilgan nisbatlar yuqori darajali boshqaruvchanlik
+-          va haydash jarayonidan betakror huzurlanishni taтАЩminlaydi.
++          va haydash jarayonidan betakror huzurlanishni ta╤В╨Р╨йminlaydi.
+         </p>
+       </div>
+     </div>
+@@ -308,7 +308,7 @@
+             color: #000000;
+           "
+         >
+-          Universal yoтАШltanlamas
++          Universal yo╤В╨Р╨иltanlamas
+         </p>
+         <p
+           style="
+@@ -320,10 +320,10 @@
+             color: #000000;
+           "
+         >
+-          SigтАШimli salon bir vaqtning oтАШzida barcha yoтАШlovchilarning qulaylik
+-          bilan joylashishini va hajmi 530 dan 2 144 l gacha boтАШlgan bagaj
+-          boтАШlimining sigтАШimdorligini taklif qiladi. Moslashuvchan pnevmatik
+-          podveska bilan juftlikdagi toтАШliq uzatmali tizim istalgan yuzada qulay
++          Sig╤В╨Р╨иimli salon bir vaqtning o╤В╨Р╨иzida barcha yo╤В╨Р╨иlovchilarning qulaylik
++          bilan joylashishini va hajmi 530 dan 2 144 l gacha bo╤В╨Р╨иlgan bagaj
++          bo╤В╨Р╨иlimining sig╤В╨Р╨иimdorligini taklif qiladi. Moslashuvchan pnevmatik
++          podveska bilan juftlikdagi to╤В╨Р╨иliq uzatmali tizim istalgan yuzada qulay
+           harakatlanishni kafolatlaydi.
+         </p>
+       </div>
+@@ -345,7 +345,7 @@
+       Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi haqida
+       batafsil ma'lumot olish uchun so'rov qoldiring.
+     </p>
+-    <a onclick="location.href='testdrive001.html'"
++    <a href="testdrive001.html"
+       ><button class="btn3">Test-drayvga yozilish</button></a
+     >
+     <div
+@@ -369,8 +369,8 @@
+           padding-top: 60px;
+         "
+       >
+-        Asosiy eтАЩtibor avtomobilni boshqarishning unutilmas tajribasini
+-        taтАЩminlash maqsadida eng soтАШnggi texnologiyalardan foydalanishga
++        Asosiy e╤В╨Р╨йtibor avtomobilni boshqarishning unutilmas tajribasini
++        ta╤В╨Р╨йminlash maqsadida eng so╤В╨Р╨иnggi texnologiyalardan foydalanishga
+         qaratilgan.
+       </p>
+ 
+@@ -395,9 +395,9 @@
+             <h3>Intellektual matritsali faralar</h3>
+             <p>
+               Moslashuvchan uzoq chiroqli svetodiodli faralar 64 ta mustaqil
+-              yorugтАШlik manbalariga ega. Avtomobilning intellektual
++              yorug╤В╨Р╨иlik manbalariga ega. Avtomobilning intellektual
+               boshqarilishi va dinamik boshqarilishi tungi paytda uning xavfsiz
+-              harakatlanishini taтАЩminlaydi.
++              harakatlanishini ta╤В╨Р╨йminlaydi.
+             </p>
+           </button>
+ 
+@@ -412,7 +412,7 @@
+             <p>
+               1,47 m uzunlikdagi svetodiodli yoritish tizimi va yorqin
+               yoritilgan logotip, modelning taniqliligini yanada oshirgan holda,
+-              uning saytlartdagi koтАШrinishini toтАШldirib turadi.
++              uning saytlartdagi ko╤В╨Р╨иrinishini to╤В╨Р╨иldirib turadi.
+             </p>
+           </button>
+ 
+@@ -436,13 +436,13 @@
+             data-image="img/exterior-001-5-wheels-d.jpg"
+           >
+             <span class="line"></span>
+-            <h3>22" gтАШildirak disklari</h3>
++            <h3>22" g╤В╨Р╨иildirak disklari</h3>
+             <p>
+               Quyma disklarning zamonaviy va bejirim dizayni ZEEKR 001
+-              modelining shiddatli sport feтАЩlini yana bir bor ifodalaydi.
++              modelining shiddatli sport fe╤В╨Р╨йlini yana bir bor ifodalaydi.
+               Elektromobillar uchun maxsus tarzda ishlab chiqilgan shinalar
+               yuqori darajali boshqaruvchanlik va burilishlarda samarali
+-              oтАШtishni taтАЩminlaydi.
++              o╤В╨Р╨иtishni ta╤В╨Р╨йminlaydi.
+             </p>
+           </button>
+         </div>
+@@ -458,7 +458,7 @@
+           Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi
+           haqida batafsil ma'lumot olish uchun so'rov qoldiring.
+         </p>
+-        <a onclick="location.href='testdrive001.html'"
++        <a href="testdrive001.html"
+           ><button class="btn4">Test-drayvga yozilish</button></a
+         ><br /><br /><br /><br /><br /><br />
+       </section>
+@@ -482,7 +482,7 @@
+             color: #000000;
+           "
+         >
+-          ZEEKR 001тАЩga xos harakatlanish kuchini kashf eting.
++          ZEEKR 001╤В╨Р╨йga xos harakatlanish kuchini kashf eting.
+         </p>
+       </div>
+ 
+@@ -510,8 +510,8 @@
+               color: #000000;
+             "
+           >
+-            Avtomobilning 1000 marta simulyatsiyadan oтАШtishi natijasida hosil
+-            boтАШlgan ajoyib aerodinamik dizayni. Har bitta element havo oqimining
++            Avtomobilning 1000 marta simulyatsiyadan o╤В╨Р╨иtishi natijasida hosil
++            bo╤В╨Р╨иlgan ajoyib aerodinamik dizayni. Har bitta element havo oqimining
+             qarshiligi va shamol shovqini darajasini pasaytirish uchun
+             optimallashtirilgan.
+           </p>
+@@ -556,8 +556,8 @@
+           >
+             Dvigatelni 6 ta boshqaruv bloklari va 18 ta datchik
+             sinxronlashtirilganligi natijasida ZEEKR 001 2WD rejimidan 4WD
+-            rejimiga atigi 4 soniyada oтАШtadi. dTCS gтАШildiraklar aylanaverishiga
+-            qarshi tizim esa yoтАШl bilan tirkalishning yoтАШqolishiga darhol reaksiya
++            rejimiga atigi 4 soniyada o╤В╨Р╨иtadi. dTCS g╤В╨Р╨иildiraklar aylanaverishiga
++            qarshi tizim esa yo╤В╨Р╨иl bilan tirkalishning yo╤В╨Р╨иqolishiga darhol reaksiya
+             qiladi.
+           </p>
+         </div>
+@@ -586,10 +586,10 @@
+               color: #000000;
+             "
+           >
+-            Maksimal quvvat тАУ 400 kVt. Maksimal aylantiruvchi moment тАУ 686 Nm.
++            Maksimal quvvat ╤В╨Р╨г 400 kVt. Maksimal aylantiruvchi moment ╤В╨Р╨г 686 Nm.
+             Elektrodvigatelning xususiyatlari 3.8 soniyada 100 km/soatgacha
+-            tezlikka erishish imkoniyatini taтАЩminlaydi. Jahon superkarlari
+-            miqyosidagi koтАШrsatkich!
++            tezlikka erishish imkoniyatini ta╤В╨Р╨йminlaydi. Jahon superkarlari
++            miqyosidagi ko╤В╨Р╨иrsatkich!
+           </p>
+         </div>
+         <img
+@@ -629,8 +629,8 @@
+               color: #000000;
+             "
+           >
+-            Old va orqa oтАШqlarning pnevmatik podveskasi beshta regulirovka qilish
+-            darajasiga ega. Balandligi real vaqt rejimida yoтАШl sharoitlaridan
++            Old va orqa o╤В╨Р╨иqlarning pnevmatik podveskasi beshta regulirovka qilish
++            darajasiga ega. Balandligi real vaqt rejimida yo╤В╨Р╨иl sharoitlaridan
+             kelib chiqib nazorat qilinadi: 117 dan 200 mm gacha.
+           </p>
+         </div>
+@@ -660,8 +660,8 @@
+             "
+           >
+             4 porshenli supportlar va ventilyatsiyali tormoz disklari bilan
+-            jihozlangan ZEEKR 001тАЩning tormoz tizimi avtomobilning atigi 34,5
+-            metrda 100 km/soat dan toтАШliq toтАШxtash imkoniyatini taтАЩminlaydi.
++            jihozlangan ZEEKR 001╤В╨Р╨йning tormoz tizimi avtomobilning atigi 34,5
++            metrda 100 km/soat dan to╤В╨Р╨иliq to╤В╨Р╨иxtash imkoniyatini ta╤В╨Р╨йminlaydi.
+           </p>
+         </div>
+         <img
+@@ -683,7 +683,7 @@
+       Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi haqida
+       batafsil ma'lumot olish uchun so'rov qoldiring.
+     </p>
+-    <a onclick="location.href='testdrive001.html'"
++    <a href="testdrive001.html"
+       ><button class="btn3">Test-drayvga yozilish</button></a
+     >
+     <div
+@@ -706,7 +706,7 @@
+     >
+       <p style="font-size: 30px; font-weight: 550">Interyerning rangi</p>
+       <p style="width: 600px">
+-        Hashamatlik va shinamlik muhitini yaratuvchi puxta oтАШylab chiqilgan
++        Hashamatlik va shinamlik muhitini yaratuvchi puxta o╤В╨Р╨иylab chiqilgan
+         interyer.
+       </p>
+     </div>
+@@ -763,7 +763,7 @@
+       Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi haqida
+       batafsil ma'lumot olish uchun so'rov qoldiring.
+     </p>
+-    <a onclick="location.href='testdrive001.html'"
++    <a href="testdrive001.html"
+       ><button class="btn3">Test-drayvga yozilish</button></a
+     ><br /><br /><br />
+     <div class="interyer1">
+@@ -819,8 +819,8 @@
+             color: #000000;
+           "
+         >
+-          Avtomobil yanada kengroq koтАШrish burchagini taтАЩminlagan va salonga
+-          koтАШproq yorugтАШlik oтАШtkazgan holda, erkinlik hissiyotini yaratuvchi
++          Avtomobil yanada kengroq ko╤В╨Р╨иrish burchagini ta╤В╨Р╨йminlagan va salonga
++          ko╤В╨Р╨иproq yorug╤В╨Р╨иlik o╤В╨Р╨иtkazgan holda, erkinlik hissiyotini yaratuvchi
+           panoramali tom bilan jihozlangan.
+         </p>
+       </div>
+@@ -849,9 +849,9 @@
+             color: #000000;
+           "
+         >
+-          Yuqori sifatli materiallar va bejirim dizayn uygтАШunligi zamonaviy
++          Yuqori sifatli materiallar va bejirim dizayn uyg╤В╨Р╨иunligi zamonaviy
+           uslubdagi muhitni yaratadi. Massaj, ventilyatsiya va isitish
+-          funksiyalariga ega qulay oтАШrindiqlar har bitta safarni qulay
++          funksiyalariga ega qulay o╤В╨Р╨иrindiqlar har bitta safarni qulay
+           sarguzashtga aylantiradi.
+         </p>
+       </div>
+@@ -892,10 +892,10 @@
+             color: #000000;
+           "
+         >
+-          Avtomobil 11 ta yuqori sifatli dinamiklar, sabvufer va ilgтАШor
+-          texnologiyalar bilan jihozlangan boтАШlib, u SRC xalaqit beruvchi
++          Avtomobil 11 ta yuqori sifatli dinamiklar, sabvufer va ilg╤В╨Р╨иor
++          texnologiyalar bilan jihozlangan bo╤В╨Р╨иlib, u SRC xalaqit beruvchi
+           shovqinlarni bartaraf etadi va betakror sifatdagi tovushni
+-          taтАЩminlaydi.
++          ta╤В╨Р╨йminlaydi.
+         </p>
+       </div>
+     </div>
+@@ -912,13 +912,13 @@
+       Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi haqida
+       batafsil ma'lumot olish uchun so'rov qoldiring.
+     </p>
+-    <a onclick="location.href='testdrive001.html'"
++    <a href="testdrive001.html"
+       ><button class="btn3">Test-drayvga yozilish</button></a
+     >
+     <div class="interior-showcase">
+       <p class="showcase-intro">
+         Biz haydash jarayonidan yangi va zavqlantiruvchi hissiyotlarni yaratish
+-        yoтАШlida innovatsion texnologiyalardan foydalanishga intilamiz.
++        yo╤В╨Р╨иlida innovatsion texnologiyalardan foydalanishga intilamiz.
+       </p>
+ 
+       <section class="tech-features">
+@@ -941,7 +941,7 @@
+             <span class="tech-line"></span>
+             <h3>Uch zonali klimat-kontrol</h3>
+             <p>
+-             Havoni tozalash tizimi va haroratning avtomatik taтАЩminlanishi har bitta yoтАШlovchi oтАШzini avtomobil salonida qulay his etishiga yordam beradi.
++             Havoni tozalash tizimi va haroratning avtomatik ta╤В╨Р╨йminlanishi har bitta yo╤В╨Р╨иlovchi o╤В╨Р╨иzini avtomobil salonida qulay his etishiga yordam beradi.
+             </p>
+           </button>
+ 
+@@ -952,9 +952,9 @@
+             data-img-src="img/interior-slide-01@2x.jpg"
+           >
+             <span class="tech-line"></span>
+-            <h3>OтАШzgacha yoritish tizimi</h3>
++            <h3>O╤В╨Р╨иzgacha yoritish tizimi</h3>
+             <p>
+-              Old va orqa tomondagi yoritish tizimining rangini va yorqinligini boshqarish imkoniyati mavjud boтАШlib, bu yanada ajoyib kombinatsiyalar yaratish hamda interyer hashamatligidan huzurlanish imkoniyatini beradi. Ranglar tanlangan haydash rejimiga bogтАШliq boтАШladi.
++              Old va orqa tomondagi yoritish tizimining rangini va yorqinligini boshqarish imkoniyati mavjud bo╤В╨Р╨иlib, bu yanada ajoyib kombinatsiyalar yaratish hamda interyer hashamatligidan huzurlanish imkoniyatini beradi. Ranglar tanlangan haydash rejimiga bog╤В╨Р╨иliq bo╤В╨Р╨иladi.
+             </p>
+           </button>
+ 
+@@ -967,7 +967,7 @@
+             <span class="tech-line"></span>
+             <h3>Bosh ekran va asboblar paneli displeyi</h3>
+             <p>
+-              14,7-dyuymli proyeksiya qiluvchi display foydalanuvchilar uchun intuitiv darajada tushunarli. U asboblar panelidagi maтАЩlumotni nihoyatda aniq aks ettirib, bu turli xil yoтАШl sharoitlarida haydash jarayonini yanada xavfsiz boтАШlishini taтАЩminlaydi.  
++              14,7-dyuymli proyeksiya qiluvchi display foydalanuvchilar uchun intuitiv darajada tushunarli. U asboblar panelidagi ma╤В╨Р╨йlumotni nihoyatda aniq aks ettirib, bu turli xil yo╤В╨Р╨иl sharoitlarida haydash jarayonini yanada xavfsiz bo╤В╨Р╨иlishini ta╤В╨Р╨йminlaydi.  
+             </p>
+           </button>
+ 
+@@ -978,13 +978,13 @@
+             data-img-src="img/interior-slide-04@2x.jpg"
+           >
+             <span class="tech-line"></span>
+-            <h3>╨ж╨╡╨╜╤В╤А╨░╨╗╤М╨╜╤Л╨╣ ╤Н╨║╤А╨░╨╜</h3>
++            <h3>тХи╨╢тХитХбтХитХЬтХд╨ТтХд╨РтХитЦСтХитХЧтХд╨ЬтХитХЬтХд╨ЫтХитХг тХд╨ЭтХитХСтХд╨РтХитЦСтХитХЬ</h3>
+             <p>
+               15,4 dyuymli sensorli display avtomobilning shaxsiy sozlanmalari
+               va ilovalardan oson foydalanish imkoniyatini beradi. Ekran
+-              haydovchiga qarab egilgan boтАШlib, bu nurlar tushishini kamaytiradi
+-              va haydash paytida zarur boтАШlgan asosiy maтАЩlumotdan tez
+-              foydalanishni kafolatlaydi. Bu haydovchining eтАЩtiborini yoтАШlda
++              haydovchiga qarab egilgan bo╤В╨Р╨иlib, bu nurlar tushishini kamaytiradi
++              va haydash paytida zarur bo╤В╨Р╨иlgan asosiy ma╤В╨Р╨йlumotdan tez
++              foydalanishni kafolatlaydi. Bu haydovchining e╤В╨Р╨йtiborini yo╤В╨Р╨иlda
+               ushlab turishga yordam beradi.
+             </p>
+           </button>
+@@ -1002,33 +1002,33 @@
+       Sotuvda mavjud avtomobillar, yetkazib berish muddatlari va narxi haqida
+       batafsil ma'lumot olish uchun so'rov qoldiring.
+     </p>
+-    <a onclick="location.href='testdrive001.html'"
++    <a href="testdrive001.html"
+       ><button class="btn4" style="margin-left: 43%;">Test-drayvga yozilish</button></a
+     ><br /><br /><br /><br><br>
+     </div><br><br>
+      <div class="future">
+       <div class="info-future">
+-       <a onclick="location.href='zeekr.html'"><div style="display: flex; padding-top: 60px" class="header4">
++       <a href="zeekr.html"><div style="display: flex; padding-top: 60px" class="header4">
+           <img src="img/Zeekr.webp" class="logo1" />
+           <p class="title-logo" style="color: black ;padding-top: 14px; padding-left: 10px;">ZEEKR</p>
+         </div></a> 
+         <div class="info-cars">
+-         <a onclick="location.href='001.html'" style="color: inherit; text-decoration: none;"> <p>001</p></a>
+-          <a onclick="location.href='allnew001.html'" style="color: inherit; text-decoration: none;"><p>All new 001</p></a>
+-          <a onclick="location.href='007.html'" style="color: inherit; text-decoration: none;"><p>007</p></a>
++         <a href="001.html" style="color: inherit; text-decoration: none;"> <p>001</p></a>
++          <a href="allnew001.html" style="color: inherit; text-decoration: none;"><p>All new 001</p></a>
++          <a href="007.html" style="color: inherit; text-decoration: none;"><p>007</p></a>
+          <a href="007.html#mapSection" style="color: inherit; text-decoration: none;"><p>007 GT</p></a>
+-          <a onclick="location.href='x.html'" style="color: inherit; text-decoration: none;"><p>X</p></a>
+-          <a onclick="location.href='7x.html'" style="color: inherit; text-decoration: none;"><p>7X</p></a>
+-          <a onclick="location.href='009.html'" style="color: inherit; text-decoration: none;"><p>009</p></a>
+-          <a onclick="location.href='9x.html'" style="color: inherit; text-decoration: none;"><p>9X</p></a>
+-          <a onclick="location.href='aboutus.html'" style="color: inherit; text-decoration: none;"><p>Biz haqimizda</p></a>
++          <a href="x.html" style="color: inherit; text-decoration: none;"><p>X</p></a>
++          <a href="7x.html" style="color: inherit; text-decoration: none;"><p>7X</p></a>
++          <a href="009.html" style="color: inherit; text-decoration: none;"><p>009</p></a>
++          <a href="9x.html" style="color: inherit; text-decoration: none;"><p>9X</p></a>
++          <a href="aboutus.html" style="color: inherit; text-decoration: none;"><p>Biz haqimizda</p></a>
+           <a href="zeekr.html#mapSection" style="color: inherit; text-decoration: none;"><p>Dilerni izlash</p></a>
+-          <a onclick="location.href='comedealer.html'" style="color: inherit; text-decoration: none;"><p>Dilerga aylaning</p></a>
+-          <a onclick="location.href='creators.html'" style="color: inherit; text-decoration: none;"><p>Egalari</p></a>
++          <a href="comedealer.html" style="color: inherit; text-decoration: none;"><p>Dilerga aylaning</p></a>
++          <a href="creators.html" style="color: inherit; text-decoration: none;"><p>Egalari</p></a>
+         </div>
+         <div class="info-company">
+           <p style="color: #000000;">
+-            Aloqa uchun maтАЩlumotlar <br />
++            Aloqa uchun ma╤В╨Р╨йlumotlar <br />
+            <p style="text-decoration: underline; color: black; "><a href="mailto:info@zeekr-cars.uz" style="color: black;">info@zeekr-cars.uz</a></p>
+           </p>
+         
+@@ -1071,18 +1071,15 @@
+         </div></div></div>
+       </div>
+      <div style="display: flex; padding-top: 150px; padding-left: 90px; gap: 50px; align-items: center; font-size: 16px;">
+-  <p style="margin: 0; color: #000000;">┬й 2024 ZEEKR</p>
+-  <a onclick="location.href='cookie.html'" style="text-decoration: none; color: black;">Cookie fayllarga nisbatan siyosat</a>
+-  <a onclick="location.href='secret.html'" style="text-decoration: none; color: black;">Maxfiylik siyosati</a>
++  <p style="margin: 0; color: #000000;">тФм╨╣ 2024 ZEEKR</p>
++  <a href="cookie.html" style="text-decoration: none; color: black;">Cookie fayllarga nisbatan siyosat</a>
++  <a href="secret.html" style="text-decoration: none; color: black;">Maxfiylik siyosati</a>
+ </div>
+     <div style="width: 92%; height: 0.3px; background: grey; margin-left: 70px; margin-top: 80px;"></div>
+-   <p style="font-size: 16px; width: 92.5%;margin-top: 40px; margin-left: 70px; line-height: 25px; color: #000000;">Diskleymer: Avtomobillar modellari, opsiyalar mavjudligi, texnik xususiyatlari va ranglari bozorga bogтАШliq holda farq qilishi mumkin. Avtomobillar barcha bozorlarda mavjud boтАШlmagan qoтАШshimcha uskunalar bilan namoyish qilinishi mumkin. Taqdim etilgan tasvirlar va videolar faqat maтАЩlumot uchun moтАШljallangan. ZEEKR avtomobillarining narxlari haqida ushbu saytda joylashtirilgan maтАЩlumot faqat tanishib chiqish maqsadida taqdim etilgan. Haqiqiy narxlar saytda koтАШrsatilgan narxlardan farq qilishi mumkin. Avtomobillarning narxi va ularning sotuvda mavjudligi haqida aktual maтАЩlumotga ega boтАШlish uchun rasmiy dilerlarga murojaat qilish tavsiya qilinadi. Tasvirda namoyish etilgan avtomobilning tashqi koтАШrinishi sotilayotgandan farq qilinishi mumkin. Ommaviy oferta boтАШlib hisoblanmaydi.
++   <p style="font-size: 16px; width: 92.5%;margin-top: 40px; margin-left: 70px; line-height: 25px; color: #000000;">Diskleymer: Avtomobillar modellari, opsiyalar mavjudligi, texnik xususiyatlari va ranglari bozorga bog╤В╨Р╨иliq holda farq qilishi mumkin. Avtomobillar barcha bozorlarda mavjud bo╤В╨Р╨иlmagan qo╤В╨Р╨иshimcha uskunalar bilan namoyish qilinishi mumkin. Taqdim etilgan tasvirlar va videolar faqat ma╤В╨Р╨йlumot uchun mo╤В╨Р╨иljallangan. ZEEKR avtomobillarining narxlari haqida ushbu saytda joylashtirilgan ma╤В╨Р╨йlumot faqat tanishib chiqish maqsadida taqdim etilgan. Haqiqiy narxlar saytda ko╤В╨Р╨иrsatilgan narxlardan farq qilishi mumkin. Avtomobillarning narxi va ularning sotuvda mavjudligi haqida aktual ma╤В╨Р╨йlumotga ega bo╤В╨Р╨иlish uchun rasmiy dilerlarga murojaat qilish tavsiya qilinadi. Tasvirda namoyish etilgan avtomobilning tashqi ko╤В╨Р╨иrinishi sotilayotgandan farq qilinishi mumkin. Ommaviy oferta bo╤В╨Р╨иlib hisoblanmaydi.
+ 
+ </p>
+    </div>
+     <script src="001.js"></script>
+-  <div id="car-cursor">&#x1F697;</div><script>const car=document.getElementById("car-cursor");let px=0;document.addEventListener("mousemove",e=>{car.style.left=e.clientX+"px";car.style.top=e.clientY+"px";if(e.clientX-px<-2)car.style.transform="translate(-50%,-50%) scaleX(-1)";else if(e.clientX-px>2)car.style.transform="translate(-50%,-50%) scaleX(1)";px=e.clientX;});</script><div id="progress-bar"></div><script>window.addEventListener("scroll",()=>{const s=document.documentElement;const p=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;document.getElementById("progress-bar").style.width=p+"%";});</script><button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button><script>window.addEventListener("scroll",()=>{const btn=document.getElementById("back-top");if(window.scrollY>300)btn.classList.add("show");else btn.classList.remove("show");});</script><div id="cookie-overlay"></div><div id="cookie-box"><div><h3>?? Cookie sozlamalari</h3><p>Saytimiz tajribangizni yaxshilash uchun cookie fayllaridan foydalanadi. Davom etish orqali siz cookie siyosatimizga rozilik bildirasiz.</p></div><div class="cookie-btns"><button id="cookie-decline" onclick="hideCookie()">Rad etish</button><button id="cookie-accept" onclick="hideCookie()">Qabul qilish</button></div></div><script>function hideCookie(){document.getElementById('cookie-box').classList.add('hide');document.getElementById('cookie-overlay').classList.add('hide');localStorage.setItem('cookie','1');}if(localStorage.getItem('cookie'))hideCookie();</script></body>
++  </body>
+ </html>
+-
+-
+-
+diff --git a/9x.css b/9x.css
+index 8a2c2d2..c8fc8f3 100644
+--- a/9x.css
++++ b/9x.css
+@@ -1,4 +1,4 @@
+-html { zoom: 1; }
++я╗┐html { zoom: 1; }
+ * {
+   padding: 0;
+   margin: 0;
+@@ -787,4 +787,4 @@ margin-left: 100px;
+ 
+ 
+ .main-menu a { font-size: 16px; }
+-::-webkit-scrollbar{display:none;}body{scrollbar-width:none;-ms-overflow-style:none;}
+\ No newline at end of file
++::-webkit-scrollbar{display:none;}body{scrollbar-width:none;-ms-overflow-style:none;}
+diff --git a/9x.html b/9x.html
+index ac01673..fd98851 100644
+--- a/9x.html
++++ b/9x.html
+@@ -1,9 +1,9 @@
+-<!doctype html>
++я╗┐<!doctype html>
+ <html lang="en">
+   <head>
+     <meta charset="UTF-8" />
+     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+-    <title>Zeekr O'zbekiston</title>
++    <title>Document</title>
+     <link rel="stylesheet" href="9x.css" />
+     <link
+       rel="stylesheet"
+@@ -12,30 +12,30 @@
+       crossorigin="anonymous"
+       referrerpolicy="no-referrer"
+     />
+-    <link rel="icon" type="image/png" href="img/logo.png">
+-  <style>#car-cursor{position:fixed;pointer-events:none;z-index:9999;left:0;top:0;font-size:28px;transform:translate(-50%,-50%);filter:drop-shadow(0 0 8px rgba(255,200,0,0.8));}body{cursor:none;}</style><style>#progress-bar{position:fixed;top:0;left:0;height:3px;width:0%;background:linear-gradient(90deg,#1a1a1a,#555);z-index:99999;transition:width 0.1s;}</style><style>#loader{position:fixed;inset:0;background:#fff;z-index:999999;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:16px;transition:opacity 0.5s,visibility 0.5s;}#loader.hide{opacity:0;visibility:hidden;}#loader-logo{font-size:32px;font-weight:700;letter-spacing:4px;color:#111;}#loader-bar{width:200px;height:2px;background:#eee;border-radius:2px;overflow:hidden;}#loader-fill{height:100%;width:0%;background:#111;animation:load 1.2s ease forwards;}@keyframes load{to{width:100%;}}</style><style>html{scroll-behavior:smooth;}</style><style>#back-top{position:fixed;bottom:32px;right:32px;width:44px;height:44px;background:#111;color:#fff;border:none;border-radius:50%;font-size:20px;cursor:pointer;z-index:9999;opacity:0;visibility:hidden;transition:opacity 0.3s,visibility 0.3s,transform 0.3s;display:flex;align-items:center;justify-content:center;}#back-top.show{opacity:1;visibility:visible;}#back-top:hover{transform:translateY(-4px);background:#333;}</style><style></style><style>#cookie-overlay{position:fixed;inset:0;background:rgba(0,0,0,0.5);z-index:999997;backdrop-filter:blur(4px);transition:opacity 0.4s;}#cookie-overlay.hide{opacity:0;pointer-events:none;}#cookie-box{position:fixed;bottom:0;left:0;right:0;background:#fff;z-index:999998;padding:32px 48px;display:flex;align-items:center;justify-content:space-between;gap:24px;box-shadow:0 -8px 40px rgba(0,0,0,0.15);transition:transform 0.4s;}#cookie-box.hide{transform:translateY(100%);}#cookie-box h3{font-size:18px;font-weight:700;margin-bottom:6px;color:#111;}#cookie-box p{font-size:14px;color:#555;max-width:600px;line-height:1.5;}#cookie-box .cookie-btns{display:flex;gap:12px;flex-shrink:0;}#cookie-accept{background:#111;color:#fff;border:none;padding:12px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:background 0.2s;}#cookie-accept:hover{background:#333;}#cookie-decline{background:transparent;color:#111;border:2px solid #ddd;padding:12px 28px;border-radius:8px;font-size:15px;font-weight:600;cursor:pointer;transition:all 0.2s;}#cookie-decline:hover{border-color:#999;}</style><style>.goog-te-banner-frame{display:none!important;}body{top:0!important;}.goog-te-ftab-float{display:none!important;}#goog-gt-tt{display:none!important;}.goog-tooltip{display:none!important;}</style><script>if(localStorage.getItem('lang')=='ru'&&!window.location.href.includes('translate.yandex')){window.location.href='https://translate.yandex.com/translate?lang=uz-ru&url='+encodeURIComponent(window.location.href);}</script></head>
+-  <body><div id="loader"><div id="loader-logo">ZEEKR</div><div id="loader-bar"><div id="loader-fill"></div></div></div><script>window.addEventListener("load",()=>{setTimeout(()=>{document.getElementById("loader").classList.add("hide");},1300);});</script>
++    <link rel="icon" type="icon" href="img/logo.png" />
++  </head>
++  <body>
+     <video autoplay muted loop class="header-video">
+       <source src="img/9X_hero.mp4" type="video/mp4" />
+     </video>
+     <div style="display: flex" class="header1">
+       <img src="img/Zeekr.webp" class="logo" />
+-      <a onclick="location.href='zeekr.html'" style="text-decoration: none; color: inherit"
++      <a href="zeekr.html" style="text-decoration: none; color: inherit"
+         ><p class="title-logo">ZEEKR</p></a
+       >
+       <div class="main-menu">
+-        <a onclick="location.href='001.html'">001</a>
+-        <a onclick="location.href='allnew001.html'">All new 001</a>
+-        <a onclick="location.href='007.html'">007</a>
++        <a href="001.html">001</a>
++        <a href="allnew001.html">All new 001</a>
++        <a href="007.html">007</a>
+         <a href="007.html#mapSection">007 GT</a>
+-        <a onclick="location.href='x.html'">X</a>
+-        <a onclick="location.href='7x.html'">7X</a>
+-        <a onclick="location.href='009.html'">009</a>
+-        <a onclick="location.href='9x.html'">9X</a>
+-        <a onclick="location.href='aboutus.html'">Biz haqimizda</a>
++        <a href="x.html">X</a>
++        <a href="7x.html">7X</a>
++        <a href="009.html">009</a>
++        <a href="9x.html">9X</a>
++        <a href="aboutus.html">Biz haqimizda</a>
+         <a href="zeekr.html#mapSection">Dilerni izlash</a>
+-        <a onclick="location.href='comedealer.html'">Dilerga aylaning</a>
+-        <a onclick="location.href='creators.html'">Egalari</a>
++        <a href="comedealer.html">Dilerga aylaning</a>
++        <a href="creators.html">Egalari</a>
+       </div>
+       <div style="float: left" class="main-info">
+         <div class="phone-number">
+@@ -52,7 +52,7 @@
+         <div style="display: flex; padding-top: 10px; font-size: 16px">
+           <i class="fa-solid fa-globe" style="color: #ffffff"></i>
+ 
+-          <p style="color: white; cursor: pointer" onclick="localStorage.setItem('lang','ru');window.open('https://translate.yandex.com/translate?lang=uz-ru&url='+encodeURIComponent(window.location.href),'_self')">╨а╤Г╤Б╤Б╨║╨╕╨╣</p>
++          <p style="color: white; cursor: pointer">тХи╨░тХд╨УтХд╨СтХд╨СтХитХСтХитХХтХитХг</p>
+         </div>
+       </div>
+     </div>
+@@ -60,7 +60,7 @@
+ 
+     <p class="about-buy">Birinchi hashamatli gibrid krossover</p>
+     <div class="btns">
+-      <a onclick="location.href='advice9x.html'"
++      <a href="advice9x.html"
+         ><button class="btn1">Maslahatga yozilish</button></a
+       >
+     </div>
+@@ -133,7 +133,7 @@
+               mm
+             </p></span
+           >
+-          <span style="color: white; font-size: 16px">yoтАШl tirqishi</span>
++          <span style="color: white; font-size: 16px">yo╤В╨Р╨иl tirqishi</span>
+         </div>
+       </div>
+     </div>
+@@ -216,7 +216,7 @@
+     <p style="text-align: center; font-size: 16px; margin-top: 40px">
+       Oldindan buyurtma qilishni boshlang.
+     </p>
+-    <a onclick="location.href='advice9x.html'"
++    <a href="advice9x.html"
+       ><button class="btn2">Maslahatga yozilish</button></a
+     >
+ 
+@@ -279,7 +279,7 @@
+           padding-top: 60px;
+         "
+       >
+-        Tashqi koтАШrinish xususiyatlari
++        Tashqi ko╤В╨Р╨иrinish xususiyatlari
+       </p>
+ 
+       <section class="feature-section">
+@@ -303,7 +303,7 @@
+             <h3>Oldingi panjara</h3>
+             <p>
+               Nafis naqshli kengaytirilgan panjara ifodalilikni oshiradi va
+-              avtomobilning salobatli koтАШrinishini taтАЩkidlaydi.
++              avtomobilning salobatli ko╤В╨Р╨иrinishini ta╤В╨Р╨йkidlaydi.
+             </p>
+           </button>
+ 
+@@ -317,8 +317,8 @@
+             <h3>Flaybrijs uslubidagi tom</h3>
+             <p>
+               Flaybrijs uslubidagi tom vizual ravishda avtomobil tomi va
+-              kuzovini yagona uygтАШun chiziqqa birlashtirib, hashamatli yaxta
+-              koтАШrinishini eslatadi.
++              kuzovini yagona uyg╤В╨Р╨иun chiziqqa birlashtirib, hashamatli yaxta
++              ko╤В╨Р╨иrinishini eslatadi.
+             </p>
+           </button>
+ 
+@@ -331,7 +331,7 @@
+             <span class="line"></span>
+             <h3>22 duyumli oynali disklar</h3>
+             <p>
+-              Original dizayndagi dadil shtrix. YorugтАШlik va akslanish oтАШyini
++              Original dizayndagi dadil shtrix. Yorug╤В╨Р╨иlik va akslanish o╤В╨Р╨иyini
+               avtomobilning qiyofasini yanada ifodali qiladi.
+             </p>
+           </button>
+@@ -340,7 +340,7 @@
+         <p style="text-align: center; font-size: 16px; margin-top: 40px">
+           Oldindan buyurtma qilishni boshlang.
+         </p>
+-        <a onclick="location.href='advice9x.html'"
++        <a href="advice9x.html"
+           ><button class="btn2" style="margin-left: 40%">
+             Maslahatga yozilish
+           </button></a
+@@ -352,13 +352,13 @@
+       style="margin-top: 90px; margin-left: 140px; width: 700px; color: #fff"
+     >
+       <p style="font-size: 34px; font-weight: 550">
+-        YorugтАШlik diodli matritsali faralar
++        Yorug╤В╨Р╨иlik diodli matritsali faralar
+       </p>
+       <p style="line-height: 26px; margin-top: 10px">
+-        Avtomobilning old va orqa qismlari bir-birini toтАШldirib, qimmatbaho
++        Avtomobilning old va orqa qismlari bir-birini to╤В╨Р╨иldirib, qimmatbaho
+         olmoslarni eslatuvchi yulduz effektini yaratadi va avtomobilga ajoyib
+         nafislik baxsh etadi. "Vast star diamond" matritsali yoritgichlar
+-        majmuasi va halqasimon yulduz-parda orqa chiroqlar orqali oтАШtadi.
++        majmuasi va halqasimon yulduz-parda orqa chiroqlar orqali o╤В╨Р╨иtadi.
+       </p>
+     </div>
+     <video autoplay muted loop class="header-video" style="margin-top: 305%">
+@@ -368,7 +368,7 @@
+       style="margin-top: 600px; margin-left: 180px; width: 700px; color: #fff"
+     >
+       <p style="font-size: 34px; font-weight: 550">
+-        Uch qator oтАШrindiqli keng salon
++        Uch qator o╤В╨Р╨иrindiqli keng salon
+       </p>
+       <p style="line-height: 26px; margin-top: 10px">
+         Interyerning har bir santimetrida hashamat va sokinlik
+@@ -386,15 +386,15 @@
+       "
+     >
+       <p style="width: 800px; text-align: center; background-color: f1f1f1">
+-        Uch qator oтАШrindiqli keng salon Interyerning har bir santimetrida
++        Uch qator o╤В╨Р╨иrindiqli keng salon Interyerning har bir santimetrida
+         hashamat va sokinlik Ikkinchi qatorda "nol tortishish" funksiyasiga ega,
+-        atamankalar va tirsak qoтАШygichlarning elektr yuritmasi, shuningdek,
++        atamankalar va tirsak qo╤В╨Р╨иygichlarning elektr yuritmasi, shuningdek,
+         shamollatish, isitish va massaj bilan jihozlangan ikkita alohida kapitan
+-        kreslosi joylashgan. Bosh suyanchigтАШiga maksimal qulaylik uchun
+-        dinamiklar oтАШrnatilgan. Uchinchi qator premium uslubda ishlangan boтАШlib,
++        kreslosi joylashgan. Bosh suyanchig╤В╨Р╨иiga maksimal qulaylik uchun
++        dinamiklar o╤В╨Р╨иrnatilgan. Uchinchi qator premium uslubda ishlangan bo╤В╨Р╨иlib,
+         orqa tomon qiyaligini elektron boshqarish va isitish funksiyasi bilan
+         jihozlangan. Interyer panoramali tom va har bir qator uchun individual
+-        quyosh pardalari bilan toтАШldirilgan.
++        quyosh pardalari bilan to╤В╨Р╨иldirilgan.
+       </p>
+     </div>
+     <h2 style="margin-top: 50px; width: 600px; margin-left: 120px">
+@@ -408,26 +408,26 @@
+         <div class="specs-container">
+           <div class="spec-item">
+             <div class="spec-value">70 kVt/soat</div>
+-            <div class="spec-label">тАФ Gibrid batareya</div>
++            <div class="spec-label">╤В╨Р╨д Gibrid batareya</div>
+           </div>
+ 
+           <div class="spec-item">
+             <div class="spec-value">380 km*</div>
+             <div class="spec-label">
+-              тАФ Sof elektr rejimida maksimal yo'l zaxirasi (CLTC metodikasi
++              ╤В╨Р╨д Sof elektr rejimida maksimal yo'l zaxirasi (CLTC metodikasi
+               bo'yicha)
+             </div>
+           </div>
+ 
+           <div class="spec-item">
+             <div class="spec-value">6C</div>
+-            <div class="spec-label">тАФ Maksimal quvvatlash tezligi</div>
++            <div class="spec-label">╤В╨Р╨д Maksimal quvvatlash tezligi</div>
+           </div>
+ 
+           <div class="spec-item">
+             <div class="spec-value">9 daqiqa**</div>
+             <div class="spec-label">
+-              тАФ 20% dan 80% gacha SoC* zaryadi<br />(State of Charge - batareya
++              ╤В╨Р╨д 20% dan 80% gacha SoC* zaryadi<br />(State of Charge - batareya
+               quvvati darajasi)
+             </div>
+           </div>
+@@ -436,12 +436,12 @@
+     </div>
+     <div class="text-wrap">
+       <p style="width: 500px">
+-        *MaтАЩlumotlar ichki sinovlarga asoslangan. Haqiqiy koтАШrsatkichlar
+-        sharoitga qarab farq qilishi mumkin: joy, ob-havo, yoтАШl holati, yuk,
++        *Ma╤В╨Р╨йlumotlar ichki sinovlarga asoslangan. Haqiqiy ko╤В╨Р╨иrsatkichlar
++        sharoitga qarab farq qilishi mumkin: joy, ob-havo, yo╤В╨Р╨иl holati, yuk,
+         shina turi va boshqalar.
+       </p>
+       <p style="width: 500px">
+-        **Zaryadlash maтАЩlumotlari suyuqlik bilan sovutish va V2 zaryadlash
++        **Zaryadlash ma╤В╨Р╨йlumotlari suyuqlik bilan sovutish va V2 zaryadlash
+         stansiyalaridan normal haroratda, maksimal tez zaryadlash tezligida
+         foydalanishga asoslangan.
+       </p>
+@@ -450,7 +450,7 @@
+     <p style="text-align: center; font-size: 16px; margin-top: 40px">
+       Oldindan buyurtma qilishni boshlang.
+     </p>
+-    <a onclick="location.href='advice9x.html'"
++    <a href="advice9x.html"
+       ><button class="btn2" style="margin-left: 43%">
+         Maslahatga yozilish
+       </button></a
+@@ -459,7 +459,7 @@
+       <div class="container-first-slide">
+         <img src="img/container5img.webp" width="800px" height="400px" />
+         <div class="container-first-slide-texts">
+-          <h3>Yopiq ikki kamerali va ikki klapanli pnevmatik osma toтАШplami</h3>
++          <h3>Yopiq ikki kamerali va ikki klapanli pnevmatik osma to╤В╨Р╨иplami</h3>
+           <div
+             class="slides-text"
+             style="
+@@ -471,11 +471,11 @@
+           >
+             <div class="">
+               <h4>110 mm</h4>
+-              <p>тАФmaksimal rostlash yoтАШli va</p>
++              <p>╤В╨Р╨дmaksimal rostlash yo╤В╨Р╨иli va</p>
+             </div>
+             <div class="">
+               <h4>288 mm</h4>
+-              <p>тАФmm maksimal rostlash yoтАШli va</p>
++              <p>╤В╨Р╨дmm maksimal rostlash yo╤В╨Р╨иli va</p>
+             </div>
+           </div>
+         </div>
+@@ -485,8 +485,8 @@
+           <h3>Faol stabilizator 48B</h3>
+           <p style="font-size: 16px;
+           margin-top: 10px;">
+-            Yuqori tezlikda burilishlardan oтАШtish, qiyalik "nol"ga yaqin,
+-            ayniqsa notekis yoтАШllarda foydali va barqarorlikni saqlashga yordam
++            Yuqori tezlikda burilishlardan o╤В╨Р╨иtish, qiyalik "nol"ga yaqin,
++            ayniqsa notekis yo╤В╨Р╨иllarda foydali va barqarorlikni saqlashga yordam
+             beradi.
+           </p>
+         </span>
+@@ -502,14 +502,14 @@
+ <div class="spand">
+   <span>
+     <i class="fa-brands fa-files-pinwheel fa-2xl" style="color: #ffffff;"></i>
+-    <p>тАФ Komfort</p></span>
++    <p>╤В╨Р╨д Komfort</p></span>
+     <span>
+       <i class="fa-solid fa-gem fa-2xl" style="color: #ffffff;"></i>
+-      <p>тАФTejamkor</p>
++      <p>╤В╨Р╨дTejamkor</p>
+     </span>
+     <span>
+       <i class="fa-solid fa-flag-checkered fa-2xl" style="color: #ffffff;"></i>
+-      <p>тАФSport</p>
++      <p>╤В╨Р╨дSport</p>
+     </span>
+ </div>
+ </span>
+@@ -521,22 +521,22 @@
+         
+         <div style="display: flex; gap: 50px; margin-top: 30px;margin-left: 150px;">
+           <span><i class="fa-solid fa-seedling fa-2xl" style="color: #ffffff;"></i>
+-          <p>тАФ OтАШt/shagтАШal</p></span>
++          <p>╤В╨Р╨д O╤В╨Р╨иt/shag╤В╨Р╨иal</p></span>
+           <span><i class="fa-regular fa-snowflake fa-2xl" style="color: #ffffff;"></i>
+-          <p>тАФOzgina qor</p></span>
++          <p>╤В╨Р╨дOzgina qor</p></span>
+           <span><i class="fa-solid fa-wind fa-2xl" style="color: #ffffff;"></i>
+           <p>Muzlik</p></span>
+         </div>
+         <div style="display: flex; gap: 50px; margin-top: 30px;margin-left: 150px;">
+           <span><i class="fa-solid fa-hill-rockslide fa-2xl" style="color: #ffffff;"></i>
+-          <p>тАФBalchiq</p></span>
++          <p>╤В╨Р╨дBalchiq</p></span>
+           <span><i class="fa-solid fa-sun-plant-wilt fa-2xl" style="color: #ffffff;"></i>
+-          <p>тАФCho'l</p></span>
++          <p>╤В╨Р╨дCho'l</p></span>
+           <span><i class="fa-solid fa-cash-register fa-2xl" style="color: #ffffff;"></i>
+-          <p>тАФQoyaga chiqish</p></span>
++          <p>╤В╨Р╨дQoyaga chiqish</p></span>
+         </div>
+         <span style="margin-top: 50px; margin-left: 150px;"><i class="fa-solid fa-mountain-city fa-2xl" style="color: #ffffff; margin-top: 30px;"></i>
+-        <p style="padding-top: 20px; margin-left: 150px;">тАФTog' yo'li</p></span></div>
++        <p style="padding-top: 20px; margin-left: 150px;">╤В╨Р╨дTog' yo'li</p></span></div>
+         <video autoplay muted loop width="800px"  height="500px" style="margin-left: 240px;">
+           <source src="img/container-video2.mp4" type="video/mp4">
+         </video>
+@@ -547,34 +547,34 @@
+     <p style="text-align: center; font-size: 16px; margin-top: 40px">
+       Oldindan buyurtma qilishni boshlang.
+     </p>
+-    <a onclick="location.href='advice9x.html'"
++    <a href="advice9x.html"
+       ><button class="btn2" style="margin-left: 43%">
+         Maslahatga yozilish
+       </button></a
+     ><br><br><br><br>
+      <div class="future">
+       <div class="info-future">
+-       <a onclick="location.href='zeekr.html'"><div style="display: flex; padding-top: 60px" class="header4">
++       <a href="zeekr.html"><div style="display: flex; padding-top: 60px" class="header4">
+           <img src="img/Zeekr.webp" class="logo1" />
+           <p class="title-logo" style="color: black ;padding-top: 14px; padding-left: 10px;">ZEEKR</p>
+         </div></a> 
+         <div class="info-cars">
+-         <a onclick="location.href='001.html'" style="color: inherit; text-decoration: none;"> <p>001</p></a>
+-          <a onclick="location.href='allnew001.html'" style="color: inherit; text-decoration: none;"><p>All new 001</p></a>
+-          <a onclick="location.href='007.html'" style="color: inherit; text-decoration: none;"><p>007</p></a>
++         <a href="001.html" style="color: inherit; text-decoration: none;"> <p>001</p></a>
++          <a href="allnew001.html" style="color: inherit; text-decoration: none;"><p>All new 001</p></a>
++          <a href="007.html" style="color: inherit; text-decoration: none;"><p>007</p></a>
+          <a href="007.html#mapSection" style="color: inherit; text-decoration: none;"><p>007 GT</p></a>
+-          <a onclick="location.href='x.html'" style="color: inherit; text-decoration: none;"><p>X</p></a>
+-          <a onclick="location.href='7x.html'" style="color: inherit; text-decoration: none;"><p>7X</p></a>
+-          <a onclick="location.href='009.html'" style="color: inherit; text-decoration: none;"><p>009</p></a>
+-          <a onclick="location.href='9x.html'" style="color: inherit; text-decoration: none;"><p>9X</p></a>
+-          <a onclick="location.href='aboutus.html'" style="color: inherit; text-decoration: none;"><p>Biz haqimizda</p></a>
++          <a href="x.html" style="color: inherit; text-decoration: none;"><p>X</p></a>
++          <a href="7x.html" style="color: inherit; text-decoration: none;"><p>7X</p></a>
++          <a href="009.html" style="color: inherit; text-decoration: none;"><p>009</p></a>
++          <a href="9x.html" style="color: inherit; text-decoration: none;"><p>9X</p></a>
++          <a href="aboutus.html" style="color: inherit; text-decoration: none;"><p>Biz haqimizda</p></a>
+           <a href="zeekr.html#mapSection" style="color: inherit; text-decoration: none;"><p>Dilerni izlash</p></a>
+-          <a onclick="location.href='comedealer.html'" style="color: inherit; text-decoration: none;"><p>Dilerga aylaning</p></a>
+-          <a onclick="location.href='creators.html'" style="color: inherit; text-decoration: none;"><p>Egalari</p></a>
++          <a href="comedealer.html" style="color: inherit; text-decoration: none;"><p>Dilerga aylaning</p></a>
++          <a href="creators.html" style="color: inherit; text-decoration: none;"><p>Egalari</p></a>
+         </div>
+         <div class="info-company">
+           <p style="color: #000000;">
+-            Aloqa uchun maтАЩlumotlar <br />
++            Aloqa uchun ma╤В╨Р╨йlumotlar <br />
+            <p style="text-decoration: underline; color: black; "><a href="mailto:info@zeekr-cars.uz" style="color: black;">info@zeekr-cars.uz</a></p>
+           </p>
+         
+@@ -617,12 +617,12 @@
+         </div></div></div>
+       </div>
+      <div style="display: flex; padding-top: 150px; padding-left: 90px; gap: 50px; align-items: center; font-size: 16px;">
+-  <p style="margin: 0; color: #000000;">┬й 2024 ZEEKR</p>
+-  <a onclick="location.href='cookie.html'" style="text-decoration: none; color: black;">Cookie fayllarga nisbatan siyosat</a>
+-  <a onclick="location.href='secret.html'" style="text-decoration: none; color: black;">Maxfiylik siyosati</a>
++  <p style="margin: 0; color: #000000;">тФм╨╣ 2024 ZEEKR</p>
++  <a href="cookie.html" style="text-decoration: none; color: black;">Cookie fayllarga nisbatan siyosat</a>
++  <a href="secret.html" style="text-decoration: none; color: black;">Maxfiylik siyosati</a>
+ </div>
+     <div style="width: 92%; height: 0.3px; background: grey; margin-left: 70px; margin-top: 80px;"></div>
+-   <p style="font-size: 16px; width: 92.5%;margin-top: 40px; margin-left: 70px; line-height: 25px; color: #000000;">Diskleymer: Avtomobillar modellari, opsiyalar mavjudligi, texnik xususiyatlari va ranglari bozorga bogтАШliq holda farq qilishi mumkin. Avtomobillar barcha bozorlarda mavjud boтАШlmagan qoтАШshimcha uskunalar bilan namoyish qilinishi mumkin. Taqdim etilgan tasvirlar va videolar faqat maтАЩlumot uchun moтАШljallangan. ZEEKR avtomobillarining narxlari haqida ushbu saytda joylashtirilgan maтАЩlumot faqat tanishib chiqish maqsadida taqdim etilgan. Haqiqiy narxlar saytda koтАШrsatilgan narxlardan farq qilishi mumkin. Avtomobillarning narxi va ularning sotuvda mavjudligi haqida aktual maтАЩlumotga ega boтАШlish uchun rasmiy dilerlarga murojaat qilish tavsiya qilinadi. Tasvirda namoyish etilgan avtomobilning tashqi koтАШrinishi sotilayotgandan farq qilinishi mumkin. Ommaviy oferta boтАШlib hisoblanmaydi.
++   <p style="font-size: 16px; width: 92.5%;margin-top: 40px; margin-left: 70px; line-height: 25px; color: #000000;">Diskleymer: Avtomobillar modellari, opsiyalar mavjudligi, texnik xususiyatlari va ranglari bozorga bog╤В╨Р╨иliq holda farq qilishi mumkin. Avtomobillar barcha bozorlarda mavjud bo╤В╨Р╨иlmagan qo╤В╨Р╨иshimcha uskunalar bilan namoyish qilinishi mumkin. Taqdim etilgan tasvirlar va videolar faqat ma╤В╨Р╨йlumot uchun mo╤В╨Р╨иljallangan. ZEEKR avtomobillarining narxlari haqida ushbu saytda joylashtirilgan ma╤В╨Р╨йlumot faqat tanishib chiqish maqsadida taqdim etilgan. Haqiqiy narxlar saytda ko╤В╨Р╨иrsatilgan narxlardan farq qilishi mumkin. Avtomobillarning narxi va ularning sotuvda mavjudligi haqida aktual ma╤В╨Р╨йlumotga ega bo╤В╨Р╨иlish uchun rasmiy dilerlarga murojaat qilish tavsiya qilinadi. Tasvirda namoyish etilgan avtomobilning tashqi ko╤В╨Р╨иrinishi sotilayotgandan farq qilinishi mumkin. Ommaviy oferta bo╤В╨Р╨иlib hisoblanmaydi.
+ 
+ </p>
+    </div>
+@@ -649,12 +649,12 @@
+         gray: { uz: "Oq", en: "Midnight white", img: "img/9x-2.webp" },
+         white: { uz: "Kumushrang", en: "Glacier silver", img: "img/9x-3.webp" },
+         blue: {
+-          uz: "ToтАШq kulrang",
++          uz: "To╤В╨Р╨иq kulrang",
+           en: "Starry Sky Gray",
+           img: "img/9x-4.webp",
+         },
+         orange: {
+-          uz: "ToтАШq siyohrang",
++          uz: "To╤В╨Р╨иq siyohrang",
+           en: "Dark night purple",
+           img: "img/9x-5.webp",
+         },
+@@ -815,8 +815,5 @@
+ 
+       new FeatureTabs();
+     </script>
+-  <div id="car-cursor">&#x1F697;</div><script>const car=document.getElementById("car-cursor");let px=0;document.addEventListener("mousemove",e=>{car.style.left=e.clientX+"px";car.style.top=e.clientY+"px";if(e.clientX-px<-2)car.style.transform="translate(-50%,-50%) scaleX(-1)";else if(e.clientX-px>2)car.style.transform="translate(-50%,-50%) scaleX(1)";px=e.clientX;});</script><div id="progress-bar"></div><script>window.addEventListener("scroll",()=>{const s=document.documentElement;const p=(s.scrollTop/(s.scrollHeight-s.clientHeight))*100;document.getElementById("progress-bar").style.width=p+"%";});</script><button id="back-top" onclick="window.scrollTo({top:0,behavior:'smooth'})">&#8679;</button><script>window.addEventListener("scroll",()=>{const btn=document.getElementById("back-top");if(window.scrollY>300)btn.classList.add("show");else btn.classList.remove("show");});</script><div id="cookie-overlay"></div><div id="cookie-box"><div><h3>?? Cookie sozlamalari</h3><p>Saytimiz tajribangizni yaxshilash uchun cookie fayllaridan foydalanadi. Davom etish orqali siz cookie siyosatimizga rozilik bildirasiz.</p></div><div class="cookie-btns"><button id="cookie-decline" onclick="hideCookie()">Rad etish</button><button id="cookie-accept" onclick="hideCookie()">Qabul qilish</button></div></div><script>function hideCookie(){document.getElementById('cookie-box').classList.add('hide');document.getElementById('cookie-overlay').classList.add('hide');localStorage.setItem('cookie','1');}if(localStorage.getItem('cookie'))hideCookie();</script></body>
++  </body>
+ </html>
+-
+-
+-
