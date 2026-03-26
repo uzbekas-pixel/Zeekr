@@ -219,6 +219,19 @@ a:hover {
   pointer-events: none;
 }
 
+#cookie-overlay {
+  pointer-events: none;
+}
+#cookie-box {
+  pointer-events: auto; /* Buttons inside should be clickable if visible, but we will let them hide */
+}
+#cookie-box.hide {
+  pointer-events: none;
+}
+#cookie-overlay.hide {
+  pointer-events: none;
+}
+
 .loader {
   position: absolute;
   inset: 0;
@@ -229,6 +242,7 @@ a:hover {
   color: var(--muted);
   opacity: 0;
   transition: opacity 0.12s ease;
+  pointer-events: none;
 }
 .btn2 {
   width: 220px;

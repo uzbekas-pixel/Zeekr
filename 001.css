@@ -225,6 +225,19 @@ a:hover {
   pointer-events:none;
 }
 
+#cookie-overlay {
+  pointer-events: none;
+}
+#cookie-box {
+  pointer-events: none;
+}
+#cookie-box.hide {
+  pointer-events: none;
+}
+#cookie-overlay.hide {
+  pointer-events: none;
+}
+
 .loader{
   position:absolute;
   inset:0;
@@ -235,6 +248,7 @@ a:hover {
   color: var(--muted);
   opacity:0;
   transition: opacity .12s ease;
+  pointer-events: none;
 }
 .btn3{
     width: 200px;
